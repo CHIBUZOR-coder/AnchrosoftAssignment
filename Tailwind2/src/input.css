@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.bigheader {
+  position: relative;
+  z-index: 10;
+}
+
+.head1{
+   font-weight: 400;
+}
+
+/*** HOME***/
+@keyframes slideHOME {
+  0% {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+  100% {
+    height: 100px; /* Set to the maximum height of the element */
+    opacity: 1;
+    overflow: visible;
+  }
+}
+
+.spann1:hover .num1 {
+  display: block;
+  animation: slideHOME 0.6s ease-in-out;
+}
+/*** HOME  Done ***/
+
+/*** MEETING AND BRANCH***/
+@keyframes slideMEETING {
+  0% {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+  100% {
+    height: 200px; /* Set to the maximum height of the element */
+    opacity: 1;
+    overflow: visible;
+  }
+}
+
+.spann2:hover .num2 {
+  display: block;
+  animation: slideMEETING 0.6s ease-in-out;
+}
+/*** MEETING AND BRANCH ***/
+
+/*** RECREATIONAL SERVICE***/
+@keyframes slideRECREATIONAL {
+  0% {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+  100% {
+    height: 250px; /* Set to the maximum height of the element */
+    opacity: 1;
+    overflow: visible;
+  }
+}
+
+.spann3:hover .num3 {
+  display: block;
+  animation: slideRECREATIONAL 0.6s ease-in-out;
+}
+/*** RECREATIONAL SERVICE DONE***/
+
+/*** EVENTS***/
+@keyframes slideRECREATIONAL {
+  0% {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+  100% {
+    height: 250px; /* Set to the maximum height of the element */
+    opacity: 1;
+    overflow: visible;
+  }
+}
+
+.spann4:hover .num4 {
+  display: block;
+  animation: slideRECREATIONAL 0.6s ease-in-out;
+  overflow: visible;
+}
+/*** EVENTS DONE***/
+
+.test {
+  position: absolute;
+  display: none;
+  top: 101%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.para {
+  @apply text-[9.5px] lg:text-head mt-[20px];
+}
+
+.first2 {
+@apply  text-[9.5px] lg:text-head
+}
+.size-6 {
+  @apply w-5 h-5;
+}
+.firstt {
+  @apply flex text-[9.5px] lg:text-head justify-center items-center p-0 lg:p-2 ;
+}
+
+
+
+.first2 {
+  @apply bg-headerBtnText  font-semibold px-2 py-1 text-white;
+}
+
+
+.line1 {
+  @apply hover:text-headerBtnText cursor-pointer transition ease-out duration-700 ;
+}
+
+.san {
+  @apply h-16;
+}

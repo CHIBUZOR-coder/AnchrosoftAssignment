@@ -1,0 +1,269 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+.child {
+  @apply text-center px-10  py-20  md:py-2;
+}
+
+.iconn {
+  @apply flex justify-center items-center text-vinila;
+}
+.icontext {
+  @apply text-2xl font-semibold;
+}
+
+.sizez {
+  @apply text-2xl h-12 w-12 md:h-20 md:w-20;
+}
+
+.banner3child {
+  @apply justify-self-center items-center h-96;
+}
+
+.write {
+  @apply flex justify-center items-center flex-col p-3 md:p-10 font-thin gap-2;
+}
+
+.texttt {
+  @apply font-thin md:text-lg;
+}
+.htext {
+  @apply font-semibold text-center text-sm md:text-2xl w-full;
+}
+
+input {
+  @apply focus:outline-none;
+}
+
+.bannchild4 {
+  @apply  flex flex-col items-center p-2;
+}
+
+.circle {
+  @apply h-pics w-pics rounded-full;
+}
+
+
+.circle {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+.info {
+  @apply flex flex-col justify-center items-center text-center p-6;
+}
+.talk {
+  @apply text-sm;
+}
+
+/* 
+input:focus {
+  outline: none;
+  border: none;
+} */
+.subchild4 {
+  @apply items-stretch justify-stretch;
+}
+
+.name {
+  @apply text-sm md:text-lg font-semibold;
+}
+
+.fchild {
+  @apply w-full  md:w-1/2;
+}
+
+.list:hover {
+  border-bottom: 1px solid rgb(122, 102, 251);
+}
+
+.anch {
+  @apply h-5;
+}
+
+.iconss {
+  @apply transition ease-in-out duration-700 hover:scale-125 hover:text-blue-900;
+}
+
+@media (min-width: 650px) and (max-width: 767.9px) {
+  .mediatext {
+    /* background-color: blue; */
+    padding: 2rem 8rem;
+  }
+
+  .mediatext4 {
+    /* background-color: blue; */
+    padding: 2rem 10rem;
+  }
+
+  form {
+    /* background-color: blue; */
+    flex-direction: row !important;
+    width: 50% !important;
+  }
+
+  .generate {
+    /* background-color: blue; */
+    width: 50% !important;
+  }
+}
+
+@media (min-width: 425.9px) and (max-width: 767.9px) {
+  .generate {
+    /* background-color: blue; */
+    width: 70% !important;
+  }
+  form {
+    /* background-color: blue; */
+    flex-direction: row !important;
+    width: 70% !important;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 859.9px) {
+  .htext {
+    /* background-color: red; */
+    font-size: large;
+  }
+}
+
+@media (min-width: 630px) and (max-width: 649.9px) {
+  .mediatext4 {
+    /* background-color: blue; */
+    padding: 2rem 10rem;
+  }
+
+  form {
+    /* background-color: blue; */
+    flex-direction: row !important;
+    width: 50% !important;
+  }
+
+  .generate {
+    /* background-color: blue; */
+    width: 50% !important;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 459.9px) {
+  .child {
+    /* background-color: blue; */
+    padding: 0 2.5rem;
+  }
+  .icontext {
+    font-size: medium !important;
+    /* background-color: blue; */
+  }
+}
+
+@media (min-width: 460px) and (max-width: 537.9px) {
+  .child {
+    /* background-color: rgb(94, 94, 116); */
+    padding: 0 6rem;
+  }
+
+  .icontext {
+    font-size: large;
+  }
+}
+
+@media (min-width: 538px) and (max-width: 767.9px) {
+  .child {
+    /* background-color: red; */
+    padding: 0 10rem !important;
+  }
+}
+
+@media (max-width: 299.9px) {
+  .header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .icontext {
+    font-size: medium !important;
+    /* background-color: blue; */
+  }
+  .banner2 {
+    padding: 10px 4px !important;
+    /* background-color: blueviolet; */
+  }
+  .child {
+    padding: 0 4px !important;
+    /* background-color: brown; */
+    width: 100% !important;
+  }
+  .texttt {
+    font-size: 10px;
+  }
+
+  .icontext {
+    font-size: 12px !important;
+  }
+  .boot {
+    font-size: 12px !important;
+  }
+  .sign {
+    font-size: 10px;
+  }
+
+  .ssing {
+    padding: 0.5px;
+  }
+
+  .htext {
+    font-size: 12px !important;
+    padding: 10px 0 !important;
+    /* background-color: blue; */
+  }
+
+  .circle {
+    height: 80px;
+    width: 80px;
+  }
+
+  .what {
+    font-size: 11px !important;
+  }
+  .banner4 {
+    gap: 5px;
+  }
+
+  .anch {
+    font-size: 10px !important;
+  }
+  ul {
+    padding: 0 2px;
+    /* background-color: rgb(166, 166, 199); */
+  }
+  .fchildd {
+    padding: 0 5px;
+    font-size: 10px !important;
+  }
+  .fchildddd {
+    padding: 0 5px;
+    font-size: 10px !important;
+  }
+  .banner {
+    padding-top: 3rem;
+  }
+  .name {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 162.9px) {
+  .banner {
+    padding: 15rem 0 !important;
+  }
+}
+
+@media (max-width: 425.9px) {
+  .bttt {
+    width: 66%;
+  }
+}

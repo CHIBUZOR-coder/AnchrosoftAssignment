@@ -1,0 +1,1 @@
+const deligate = document.querySelector(".deligate ");
