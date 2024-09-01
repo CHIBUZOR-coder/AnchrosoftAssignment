@@ -1,0 +1,43 @@
+table,
+th,
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+table {
+    border-spacing: 10px;
+    background-color: aqua;
+    color: whitesmoke;
+    width: 70%;
+}
+
+table th {
+    color: black;
+}
+
+
+
+.num {
+    color: black;
+}
+
+table th,
+td {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.242);
+    text-align: center;
+
+}
+
+
+
+table {
+    border-radius: 4px;
+
+}
+
+#leo {
+    background-color: red;
+}

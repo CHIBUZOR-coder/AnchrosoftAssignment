@@ -1,0 +1,27 @@
+table,
+th,
+td {
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+table {
+    border-spacing: 15px;
+    border-collapse: collapse;
+    background-color: dimgray;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.594);
+    border-radius: 10px;
+}
+
+
+table tr {
+    color: blanchedalmond;
+}
+
+table th {
+    color: black;
+}
+
+.num {
+    color: black;
+}

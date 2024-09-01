@@ -1,0 +1,21 @@
+h3 {
+    background-color: darkslategrey;
+    width: 300px;
+    height: 100px;
+    border: 2px solid yellow;
+}
+
+
+.chibuzor {
+    background-color: rgba(75, 236, 80, 0.483);
+    width: 300px;
+    height: 100px;
+    border: 2px solid rgb(151, 151, 14);
+}
+
+#chi {
+    background-color: rgba(216, 119, 251, 0.143);
+    width: 400px;
+    height: 100px;
+    border: 3px solid rgb(255, 0, 34);
+}

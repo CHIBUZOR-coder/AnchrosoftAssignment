@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+
+
+
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.form form {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 40vw;
+    color: azure;
+}
+
+
+.space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+
+}
+
+.form form div {
+    margin-bottom: 15px;
+}
+
+.form form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form form input[type="text"],
+input[type="email"],
+textarea,
+input[type="file"],
+input[type="color"],
+input[type="range"] {
+    width: calc(100% - 22px);
+    /* Adjust width to account for padding and border */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(245, 222, 179, 0.206);
+}
+
+.form form input[type="range"] {
+    color: #333;
+}
+
+.form form input[type="text"],
+textarea,
+input[type="email"]:focus {
+    outline: none;
+    border: none;
+}
+
+form button {
+    background: #5c6bc0;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: ease-in-out .5s;
+    font-weight: bold;
+}
+
+form button:hover {
+    background: rgb(0, 117, 255);
+    transform: scale(1.1);
+    font-size: 0.9rem;
+}
+
+.space .links {
+    padding: 50px;
+    width: 40%;
+    display: flex;
+    gap: 2rem;
+        flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.space .links a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: ease-in-out .5s;
+    letter-spacing: 2px;
+}
+
+.space .links a:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

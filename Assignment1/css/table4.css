@@ -1,0 +1,100 @@
+table
+th,
+td {
+ 
+    padding: 5px;
+}
+
+table {
+    /* border-spacing: 10px; */
+    background-color: rgb(215, 148, 148);
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+    /* padding: 2rem; */
+    width: 80rem;
+    font-size: larger;
+    border-radius: 4px;
+    border-collapse: collapse;
+}
+
+
+table tbody tr:nth-child(odd) {
+    background-color:rgba(0, 128, 0, 0.352);
+    color:whitesmoke;
+}
+
+table th {
+    color: black;
+    text-align: left;
+    font-style: italic;
+}
+
+.num {
+    color: black;
+}
+
+/* 
+table
+th,
+td {
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+
+   background-color: ;
+   
+} */
+
+#leo {
+    background-color: rgb(0, 17, 255);
+}
+
+
+
+/* table */
+
+table th,
+td {
+
+    padding: 5px;
+}
+
+table {
+    /* border-spacing: 10px; */
+    background-color: rgb(215, 148, 148);
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+    /* padding: 2rem; */
+    width: 80rem;
+    font-size: larger;
+    border-radius: 4px;
+    border-collapse: collapse;
+}
+
+
+table tbody tr:nth-child(odd) {
+    background-color: rgba(0, 128, 0, 0.352);
+    color: whitesmoke;
+}
+
+table th {
+    color: black;
+    text-align: left;
+    font-style: italic;
+}
+
+.num {
+    color: black;
+}
+
+/* 
+table
+th,
+td {
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+
+   background-color: ;
+   
+} */
+
+#leo {
+    background-color: rgb(0, 17, 255);
+}

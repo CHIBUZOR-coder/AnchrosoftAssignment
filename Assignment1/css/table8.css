@@ -1,0 +1,62 @@
+table th,
+td {
+    border: 2px solid blue;
+    padding: 5px;
+}
+
+table {
+    /* border-spacing: 10px; */
+    background-color: yellowgreen;
+    color: blue;
+    border: 1px solid rgb(0, 0, 0);
+    /* padding: 2rem; */
+    width: 80rem;
+    font-size: larger;
+    border-radius: 4px;
+    border-collapse: collapse;
+}
+
+/* 
+table tbody tr:nth-child(odd) {
+    background-color: rgba(107, 196, 237, 0.352);
+    color: whitesmoke;
+} */
+
+
+table tbody tr td:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+
+table th {
+    color: black;
+    text-align: left;
+    font-style: italic;
+}
+
+.num {
+    color: black;
+
+}
+
+.num:hover {
+    background-color: yellowgreen;
+    color: black;
+    cursor: auto;
+}
+
+/* 
+table
+th,
+td {
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+
+   background-color: ;
+   
+} */
+
+#leo {
+    background-color: rgb(0, 17, 255);
+}

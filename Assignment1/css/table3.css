@@ -1,0 +1,53 @@
+table,
+th,
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+table {
+    /* border-spacing: 10px; */
+background-color: red;
+    color: whitesmoke;
+    border: 1px solid rgb(0, 0, 0);
+    /* padding: 2rem; */
+    width: 80rem;
+    font-size: larger;
+}
+
+
+table tbody tr:nth-child(odd) {
+    background-color: white;
+    color:black;
+}
+
+table th {
+    color: black;
+    text-align: left;
+    font-style: italic;
+    
+
+}
+
+.num {
+    color: black;
+}
+
+/* 
+table
+th,
+td {
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+
+   background-color: ;
+   
+} */
+
+table {
+    border-radius: 4px;
+
+}
+
+#leo {
+    background-color: rgb(0, 17, 255);
+}

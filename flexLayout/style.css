@@ -1,0 +1,945 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*************************************header*************************************************/
+.header {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    background: #fff;
+    height: 5rem;
+    padding: 1rem;
+    z-index: 10;
+    box-shadow: 0px 20px 3px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.header .logo a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: #000;
+    transition: ease-in-out .5s;
+
+    &:hover {
+        color: blue;
+    }
+}
+
+
+
+.header .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+    padding-left: 1.5rem;
+}
+
+
+.header .navbar ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #000;
+    transition: ease-in-out .5s;
+
+    &:hover {
+        color: rgb(150, 147, 147);
+        transform: scale(1);
+    }
+}
+
+
+.header .navbar ul li {
+    transition: ease-in-out .5s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+.header .navbar ul li .navbar-btn {
+    color: #fff;
+    background-color: blueviolet;
+    padding: .6rem 1rem;
+    border-radius: 25px;
+    transition: ease-in-out .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+
+    &:hover {
+        background-color: blue;
+    }
+}
+
+.header .navbar ul li .navbar-btn:hover {
+    color: #fff;
+}
+
+/*************************************header done*************************************************/
+
+
+
+/*****************************************************banner **************************************/
+
+.banner {
+    width: 100%;
+    background: #cfcfcf;
+    /* background-color: #000; */
+    display: flex;
+    padding-top: 5rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner .banner-item {
+    width: 30rem;
+    height: 90vh;
+}
+
+
+
+img-fluid {
+    width: 150px;
+    height: 150px;
+}
+
+/*************banner_item1*******************/
+.banner .item1 {
+    /* background-color: burlywood; */
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+
+
+.banner .item1 h4 {
+    position: relative;
+    width: 80%;
+    font-size: 4.3rem;
+    font-weight: bold;
+
+}
+
+
+.banner .item1 p {
+    color: rgb(129, 137, 144);
+    font-size: 1.3rem;
+}
+
+
+.banner .item1 .text .txt {
+    margin: 1rem 0;
+}
+
+.banner .item1 .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+    /* background-color: aqua; */
+
+}
+
+.banner .item1 .images .img {
+    height: 3rem;
+    width: 10rem;
+    border-radius: 5px;
+}
+
+.banner .item1 .images .imag1 {
+    background: url(./images/google.jpg) center center/ cover;
+}
+
+.banner .item1 .images .imag2 {
+    background: url(./images/apple.jpg) center center/ cover;
+}
+
+/***************** banner item1 done *******/
+
+
+
+
+
+
+
+/***************** banner item2 *******/
+.banner .item2 {
+    /* background-color: rgb(88, 76, 59); */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner .item2 .video {
+    border: 8px solid rgb(29, 30, 29);
+    border-radius: 10px;
+    width: 50%;
+    background-color: rgb(228, 202, 202);
+    height: 90%;
+    z-index: 3;
+    position: relative;
+
+}
+
+.banner .item2 .video .rela {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner .item2 .circle {
+    position: absolute;
+    height: 70%;
+    width: 70%;
+    background: linear-gradient(blue, purple);
+    border-radius: 100%;
+    z-index: 1;
+}
+
+
+.banner .item2 .dots {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    padding: 1rem;
+    transform: rotate(80deg);
+
+    color: white;
+
+}
+
+.banner .item2 .dot2 {
+    background-color: #cfcfcf;
+
+}
+
+.fa-solidd {
+    background-color: blue;
+    color: blue;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 100%;
+}
+
+.fa-xmark {
+    color: blue;
+    background-color: #cfcfcf;
+
+
+}
+
+.banner .item2 .dot1 {
+    top: 20%;
+    right: 10%;
+    border-radius: 100%;
+}
+
+.banner .item2 .dot2 {
+
+    top: 80%;
+    left: 10%;
+
+
+}
+
+/*************banner_item2 done*******************/
+
+/***************************************** banner done ****************************************************************/
+
+
+
+
+
+
+/****************************************** banner2 ********************************************************************************/
+.banner2 {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-color: #7E22E6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.banner2 .btext {
+    font-size: 2.5rem;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    margin-top: 4rem;
+
+}
+
+.banner2 .bimg {
+    position: relative;
+    width: 10%;
+    height: 5rem;
+    margin: 2rem 0;
+}
+
+.banner2 .bimg .sess path {
+    fill: #fff;
+    /* Adjust color as needed */
+}
+
+/* ****************************************banner2 done *******************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************** Main  sec-con************************************************************************************/
+.sec-con .sec-con-con {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6rem 0;
+}
+
+.sec-con .box {
+    width: 30rem;
+    height: 90vh;
+
+}
+
+
+
+.sec-con .sec1 {
+    /* background-color: brown; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+
+.sec-con .sec1 .use {
+    text-align: center;
+    position: relative;
+    padding: 1rem;
+}
+
+
+.main .sec-con .sec1 .use h3 {
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+}
+
+.sec-con .sec1 .use p {
+    color: rgba(129, 137, 144, 1);
+
+
+}
+
+.sec-con .sec-con .sec1 .use .info {
+    position: relative;
+    background-color: white;
+    color: blue;
+
+}
+
+.sec-con .custom-size {
+     font-size: 4rem;
+    width: 2.5rem;
+    background: linear-gradient(to right, blue, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+
+
+/* 
+.main .sec1 .use1 {
+    background-color: blue;
+}
+
+
+.main .sec1 .use2 {
+    background-color: rgb(80, 80, 114);
+}
+
+.main .sec1 .use3 {
+    background-color: rgb(128, 128, 134);
+}
+
+.main .sec1 .use4 {
+    background-color: rgb(53, 186, 79);
+}
+ */
+
+
+
+
+
+
+
+.sec-con .sec2 {
+    /* background-color: rgb(113, 113, 144); */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.sec-con .sec2 .vcontainer {
+    /* background-color: rgb(236, 228, 242); */
+    height: 95%;
+    width: 50%;
+    border: 10px solid rgb(29, 30, 29);
+    border-radius: 15px;
+    position: relative;
+    z-index: 3;
+
+}
+
+
+.sec-con .vcontainer .vchild {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sec-con .sec2 .circle2 {
+    position: absolute;
+    height: 58%;
+    width: 58%;
+    right: 30%;
+    background: linear-gradient(to right, blue, purple);
+    border-radius: 100%;
+    /* z-index: 1; */
+}
+
+
+.sec-con .sec2 .mdots {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    transform: rotate(80deg);
+
+    color: white;
+
+}
+
+
+.sec-con .sec2 .mdot2 {
+    top: 12%;
+    right: 16%;
+    border-radius: 100%;
+}
+
+.sec-con .sec2 .mdot1 {
+    top: 86%;
+    left: 14%;
+
+}
+
+
+
+.sec-con .sec2 .mdot2 {
+    background-color: white;
+
+}
+
+.sec-con .sec2 .fa-solidd {
+    background-color: blue;
+    color: blue;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 100%;
+}
+
+.sec-con .sec2 .fa-xmark {
+    color: blue;
+    background-color: white;
+}
+
+.sec-con2 {
+    background-color: rgb(248, 249, 250);
+
+}
+
+.sec-con2 .sec-con2-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6rem 0;
+
+}
+
+.sec-con2 .boxx {
+    width: 30rem;
+}
+
+
+.sec-con2 .boxx1 h4 {
+    font-size: 4rem;
+}
+
+.sec-con2 .boxx1 .h4-div {
+    margin: 2rem 0;
+}
+
+/* 
+.sec-con2 .boxx1 .boxx1-txt {
+    margin: 3rem 0;
+} */
+
+.sec-con2 .boxx1 .boxx1-txt p {
+    color: rgb(129, 137, 144);
+    font-size: 1.3rem;
+}
+
+.sec-con2 .boxx2 {
+    background: linear-gradient(to right, blue, purple);
+    border-radius: 100%;
+    height: 20rem;
+    width: 20rem;
+    /* font-size: 2rem; */
+}
+
+.sec-con3 {
+    background-color: rgb(127, 127, 127);
+    /* height: 100vh; */
+    position: relative;
+    padding: 5rem;
+
+}
+
+
+
+.sec-con3 .sec-con3-child {
+    position: relative;
+    width: 40%;
+    margin-top: 1rem;
+}
+
+.sec-con3 .sec-con3-child h4 {
+    color: white;
+    font-size: 4.2rem;
+}
+
+.sec-con3 .btn-con {
+
+    /* background-color: chocolate; */
+    padding-top: 2rem;
+    width: 100%;
+    position: relative;
+}
+
+
+
+
+.sec-con3 .sec-con3-childd {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    transition: ease-in-out .5s;
+    width: 13rem;
+    padding: 2rem;
+    height: 3.4rem;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        background-color: white;
+        color: #000;
+    }
+}
+
+
+
+.sec-con4 {
+    position: relative;
+    background: linear-gradient(to right, blue, purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sec-con4 .sec4-child {
+    position: relative;
+    /* background-color: chartreuse; */
+    width: 60%;
+    padding: 4rem;
+}
+
+.sec-con4 .sec4-child .texxt {
+    text-align: center;
+}
+
+
+.sec-con4 .sec4-child .texxt h3 {
+    font-size: 2.2rem;
+    color: white;
+}
+
+
+.sec-con4 .sec-image {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.4rem;
+}
+
+.sec-con4 .sec-image .imeg {
+    border-radius: 5px;
+    height: 3rem;
+    width: 10rem;
+}
+
+.sec-con4 .meg1 {
+    /* background-color: crimson; */
+    background: url(./images/google.jpg)center center/ cover;
+
+}
+
+.sec-con4 .meg2 {
+    /* background-color: rgb(75, 57, 61); */
+    background: url(./images/apple.jpg) center center/ cover;
+}
+
+/**************** main sec-con done  ********************************************************/
+
+
+
+
+
+
+
+
+
+/****************Footer***********************************************************************/
+.footer {
+    background-color: #000;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+/* 
+.footer .footer-con {
+    background-color: yellow;
+} */
+
+.footer-con .word1 {
+    color: rgb(83, 110, 128);
+    padding: .5rem;
+}
+
+
+
+.footer-con .word2 {
+    color: rgb(83, 110, 128);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    gap: .5rem;
+
+}
+
+.footer-con .word2 .list {
+    color: rgb(83, 110, 128);
+    transition: ease-in-out .5s;
+
+    &:hover {
+        color: white;
+        border-bottom: 1px solid white;
+    }
+}
+
+.footer-con .word2 a {
+
+    text-decoration: none;
+    color: rgb(83, 110, 128);
+
+}
+
+/****************Footer done***********************************************************************/
+@media (max-width:959.9px) {
+
+    .banner .item1 {
+        /* background-color: burlywood; */
+
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .banner .item1 h4 {
+        position: relative;
+        width: 100%;
+        font-size: 4.3rem;
+        font-weight: bold;
+
+    }
+
+
+    .header .logo a {
+        text-decoration: none;
+        font-size: .8rem;
+        font-weight: bolder;
+        color: #000;
+        transition: ease-in-out .5s;
+
+        &:hover {
+            color: blue;
+        }
+    }
+
+
+    .header .navbar ul li a {
+        font-size: .8rem;
+    }
+
+    .sec-con .sec2 {
+        /* background-color: #7E22E6; */
+        padding: 2rem;
+    }
+
+    .header .navbar ul li .navbar-btn {
+        padding: .6rem .5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+    }
+}
+
+@media (min-width:960px) {
+
+    .banner {
+        padding: 10rem 0 5rem 0;
+    }
+
+}
+
+
+@media (max-width:420.99px) {
+
+    .banner .item1 {
+        /* background-color: rgb(21, 35, 194); */
+
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .banner .item1 {
+        /* background-color: burlywood; */
+        padding: 1rem;
+    }
+
+    .banner .item1 h4 {
+        position: relative;
+        width: 100%;
+        font-size: 2.3rem;
+        font-weight: bold;
+
+    }
+
+
+    .banner .item2 .video {
+        border: 8px solid rgb(29, 30, 29);
+        border-radius: 10px;
+        width: 50%;
+        background-color: rgb(228, 202, 202);
+        height: 70%;
+        z-index: 3;
+        position: relative;
+
+    }
+
+
+    .banner .item2 .dot1 {
+        top: 20%;
+        right: 10%;
+        border-radius: 100%;
+    }
+
+    .banner .item2 .dot2 {
+
+        top: 70%;
+        left: 10%;
+
+    }
+
+    .banner2 {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+
+    }
+
+
+    .header .logo a {
+        text-decoration: none;
+        font-size: .9rem;
+        font-weight: bolder;
+        color: #000;
+        transition: ease-in-out .5s;
+
+        &:hover {
+            color: blue;
+        }
+    }
+
+
+    .header .navbar ul li a {
+        font-size: .7rem;
+    }
+
+    .banner .item1 p {
+        color: rgb(129, 137, 144);
+        font-size: .9rem;
+    }
+
+    .header .navbar ul li .navbar-btn {
+        padding: .2rem .2rem;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+    }
+
+
+    .sec-con .sec2 .vcontainer {
+        height: 70%;
+        width: 50%;
+
+    }
+
+
+    .sec-con .sec2 .mdot2 {
+        top: 18%;
+        right: 12%;
+        border-radius: 100%;
+    }
+
+    .sec-con .sec2 .mdot1 {
+        top: 78%;
+        left: 12%;
+
+    }
+
+    .sec-con .sec2 .circle2 {
+        position: absolute;
+        height: 48%;
+        width: 48%;
+        right: 40%;
+
+    }
+
+    .sec-con3 .sec-con3-child {
+        text-align: center;
+    }
+
+    .sec-con3 {
+
+        padding: 2rem 2rem;
+
+
+    }
+}
+
+@media (max-width:559.9px) {
+
+    .banner .item1 {
+
+        text-align: center;
+        padding: 0 2.5rem;
+    }
+
+    .sec-con3 {
+        text-align: center;
+
+    }
+
+
+}
+
+@media (max-width:669.9px) {
+    .sec-con3 .sec-con3-child {
+
+        width: 100%;
+        /* background-color: #7E22E6; */
+        text-align: center;
+    }
+
+    .sec-con3 .btn-con {
+        /* background-color: chocolate; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width:499.99px) {
+    .sec-con2 {
+        padding: 0 1rem;
+    }
+}

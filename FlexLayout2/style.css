@@ -1,0 +1,1531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* header */
+.header {
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-color: white;
+    box-shadow: 0px 20px 3px 2px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+
+    z-index: 10;
+
+    font-family: "Metrophobic", sans-serif;
+
+}
+
+.header .hchild {
+    font-size: 1.3rem;
+}
+
+.header .spantag span {
+
+    /* background-color: blueviolet; */
+    font-weight: bold;
+}
+
+.header a {
+    text-decoration: none;
+    background-color: blueviolet;
+    padding: .5rem;
+    border-radius: 10px;
+    color: white;
+    transition: ease-in-out .5s;
+    font-family: "Metrophobic", sans-serif;
+
+    &:hover {
+        background-color: blue;
+    }
+}
+
+/* header done */
+
+/* banner */
+
+.banner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/7542.jpg) center center/ cover;
+    position: relative;
+    flex-direction: column;
+    z-index: 2;
+    position: relative;
+}
+
+.badge {
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+    top: 0;
+
+    left: 0;
+
+}
+
+
+.banner .bchild {
+    width: 35%;
+}
+
+.banner .bchild1 {
+    position: relative;
+    /* background-color: blue; */
+    color: rgb(12, 12, 12);
+    font-size: 3rem;
+    z-index: 6;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: "Metrophobic", sans-serif;
+}
+
+.banner .bchild2 {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .bchild2 .form {
+    padding: 1rem;
+}
+
+.banner .bchild2 .labell {
+    display: none;
+
+}
+
+
+.banner .bchild2 .form {
+    position: relative;
+    /* background-color: brown; */
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.banner .bchild2 .form input {
+    position: relative;
+
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    z-index: 6;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* background-color: blueviolet; */
+    transition: ease-in-out .5s;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+
+.banner .bchild2 .form a {
+    text-decoration: double;
+    background-color: rgba(138, 43, 226, 0.9);
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    transition: ease-in-out .5s;
+    z-index: 6;
+
+    &:hover {
+        background-color: blue;
+    }
+}
+
+.banner .bchild2 .form .danger {
+    position: absolute;
+    /* background-color: white; */
+    right: 30%;
+    font-size: 1.2rem;
+}
+
+.fa-circle-exclamation {
+
+    color: rgba(255, 0, 0, 0.6);
+}
+
+.banner .bchild2 .form input:focus {
+    outline: none;
+    border: none;
+}
+
+/******************************banner done******************************* */
+
+
+
+/******************************banner2******************************* */
+.banner2 {
+    position: relative;
+    background-color: rgb(248, 249, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+
+    flex-wrap: wrap;
+    padding: 8rem 2rem;
+
+    .b2child {
+        position: relative;
+        flex-basis: 22rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .size {
+            position: relative;
+            width: 30%;
+            height: 30%;
+            color: blue;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: "Metrophobic", sans-serif;
+        }
+
+        .word {
+            text-align: center;
+            font-size: 1.1rem;
+            font-family: "Metrophobic", sans-serif;
+            font-weight: lighter;
+            font-style: normal;
+        }
+
+
+    }
+
+    /* .b2child1 {
+        background-color: blue;
+    }
+
+    .b2child2 {
+        background-color: red;
+    }
+
+    .b2child3 {
+        background-color: yellow;
+    } */
+}
+
+/***************** banner2 done *******************************************/
+
+
+
+
+/********************************banner3******************************** */
+
+.banner3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+
+    .b3child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+
+        /* padding: .1rem; */
+        .subchild {
+            width: 50%;
+            position: relative;
+        }
+
+
+        .schld {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 22rem;
+            flex-direction: column;
+            position: relative;
+            gap: .8rem;
+
+
+            .bTitle {
+                position: relative;
+                width: 70%;
+                font-size: 2.2rem;
+                font-weight: bold;
+                font-family: "Metrophobic", sans-serif;
+                text-align: center;
+            }
+
+            .btext {
+                position: relative;
+                width: 70%;
+                font-size: 1.2rem;
+                font-family: "Metrophobic", sans-serif;
+                font-weight: lighter;
+                font-style: normal;
+            }
+
+        }
+
+        .subchildA1 {
+            background: url(./images/mobile.jpg) center center/ cover;
+            /* background-color: rgb(79, 79, 77); */
+        }
+
+        /* 
+        .subchildA2 {
+            background-color: rgb(180, 180, 175);
+        }
+
+        .subchildB2 {
+            background-color: rgb(57, 57, 5);
+        } */
+
+
+        .subchildB1 {
+            background: url(./images/code.jpg) center center/ cover;
+            /* background-color: rgb(44, 44, 28); */
+        }
+
+
+        .subchildC1 {
+            background: url(./images/coding.jpg) center center/ cover;
+            /* background-color: rgb(177, 162, 249); */
+        }
+
+        /* 
+        .subchildC2 {
+            background-color: rgb(50, 76, 94);
+        } */
+
+    }
+
+    /* 
+    .b3child1 {
+        background-color: rgb(112, 112, 28);
+
+    }
+
+    .b3child2 {
+        background-color: rgb(105, 105, 83);
+    }
+
+    .b3child3 {
+        background-color: rgb(218, 218, 82);
+    } */
+
+}
+
+
+/********************************banner3 done******************************** */
+/********************************banner4******************************** */
+/********************************banner4******************************** */
+
+
+.banner4 {
+    background-color: #F8F9FA;
+    padding: 2rem 0;
+
+    .container {
+        /* background-color: blueviolet; */
+        width: 90%;
+        margin: 20px auto;
+        display: flex;
+        gap: 5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        position: relative;
+        
+
+    }
+
+    .container .box {
+        flex-basis: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: stretch;
+        text-align: center;
+        padding: 10px;
+        border-radius: 20px;
+        z-index: 5;
+        position: relative;
+
+    }
+
+    .container .box img {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    }
+
+
+
+    .container .box .userinfo {
+        position: relative;
+        /* background-color: darkblue; */
+        width: 100%;
+        border-radius: 20px;
+        padding: 10px;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .6rem;
+        font-family: "Metrophobic", sans-serif;
+    }
+}
+
+
+
+/********************************banner4 done*********************************/
+
+
+/********************************banner5*********************************/
+.banner5 {
+
+    background: url(./images/7542.jpg)center center/ cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+
+    .bchild5 {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        color: white;
+
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        /* background-color: blue; */
+        font-family: "Metrophobic", sans-serif;
+
+        .text5 {
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        .b5form {
+            position: relative;
+            /* background-color: brown; */
+            width: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            .labell {
+                display: none;
+            }
+
+            input {
+                position: relative;
+                flex-grow: 1;
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: .6rem;
+                padding: 1rem;
+                border: none;
+                outline: none;
+                z-index: 6;
+                transition: ease-in-out .5s;
+                font-size: 1.2rem;
+                background-color: rgba(255, 255, 255, 0.5);
+                /* background-color: blueviolet; */
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.7);
+                }
+
+            }
+
+            a {
+                text-decoration: double;
+                background-color: rgba(138, 43, 226, 0.9);
+                padding: 1rem;
+                border-radius: 10px;
+                color: white;
+                transition: ease-in-out .5s;
+                z-index: 6;
+
+                &:hover {
+                    background-color: blue;
+                }
+            }
+
+            .danger {
+                position: absolute;
+                /* background-color: white; */
+                right: 30%;
+                font-size: 1.2rem;
+            }
+
+
+
+            .fa-circle-exclamation {
+
+                color: rgba(255, 0, 0, 0.6);
+            }
+
+            input:focus {
+                outline: none;
+                border: none;
+            }
+        }
+    }
+
+
+
+}
+
+/********************************banner5 done*********************************/
+
+
+
+
+/********************************footer*********************************/
+.footer {
+    background-color: #F8F9FA;
+    /* background-color: coral; */
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .ftchild {
+        flex-basis: 50%;
+
+
+    }
+
+    .pp {
+        .fot1 {
+            /* background-color: blue; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            padding: 1rem;
+            align-items: center;
+            gap: .5rem;
+
+            a {
+                color: rgb(13, 110, 253);
+
+                transition: ease-in-out .5s;
+                text-decoration: none;
+                padding: .2rem 0;
+
+                &:hover {
+                    color: blue;
+
+                }
+            }
+
+
+
+
+            .list {
+                transition: ease-in-out .5s;
+
+                &:hover {
+
+                    border-bottom: 1px solid blue;
+                }
+            }
+
+        }
+
+
+        .pp2 {
+            text-align: center;
+            color: gra;
+        }
+    }
+
+    .fot2 {
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: end;
+        padding: 4rem;
+        align-items: center;
+
+        position: relative;
+
+        .pikin {
+            /* background-color: blue; */
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: end;
+            padding: 2rem;
+            align-items: center;
+            gap: 2rem;
+            position: relative;
+        }
+
+        a {
+            color: rgb(13, 110, 253);
+            font-size: 1.6rem;
+            transition: ease-in-out .5s;
+
+
+            &:hover {
+                color: blue;
+                transform: scale(1.2);
+            }
+        }
+
+    }
+}
+
+/********************************footer*********************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+
+
+@media (max-width:170.99px) {
+    .header {
+        flex-direction: column !important;
+        justify-content: center !important;
+        gap: 1rem;
+        padding: 1rem 2rem;
+        position: relative;
+    }
+
+    .spantag {
+        /* background-color: blanchedalmond; */
+        position: relative;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .header .hchild {
+        font-size: .1rem !important;
+        width: 100% !important;
+
+
+    }
+
+    #hchild {
+        font-size: .8rem !important;
+    }
+
+    #hchild2 {
+        font-size: .7rem !important;
+    }
+
+
+
+    .header a {
+        display: flex;
+        justify-content: center !important;
+        padding: .5rem 1rem !important;
+
+
+    }
+
+    .header .spantag span {
+        font-size: 1.2rem !important;
+        /* background-color: blueviolet; */
+        font-weight: bold;
+    }
+
+    .banner {
+        padding: 0 .252rem;
+        height: 200vh !important;
+    }
+
+    .banner .bchild1 {
+        /* background-color: blue; */
+        width: 100%;
+        font-size: 1.1rem;
+
+    }
+
+    .banner .bchild2 .form {
+        /* background-color: brown; */
+        flex-direction: column;
+        width: 40% !important;
+
+    }
+
+
+    .banner5 .bchild5 .b5form {
+        flex-direction: column;
+        width: 40% !important;
+
+    }
+
+
+    .banner5 .bchild5 .text5 {
+        /* background-color: blue; */
+        font-size: 1.1rem;
+    }
+
+
+
+    .banner .bchild2 .form input {
+        gap: .6rem;
+        padding: .8rem;
+        font-size: .8rem !important;
+        width: 7rem;
+        /* background-color: blueviolet; */
+
+    }
+
+
+    .banner2 .b2child {
+
+        /* background-color: blue; */
+        .title {
+            /* background-color: blue; */
+            text-align: center;
+            font-size: .8rem;
+            font-weight: bolder;
+        }
+
+        .word {
+            /* background-color: red; */
+            text-align: center;
+            font-size: .7rem;
+            margin-top: .5rem;
+        }
+    }
+
+    .banner5 .bchild5 .b5form input {
+        gap: .6rem;
+        padding: .8rem;
+        font-size: .8rem !important;
+        width: 7rem;
+        /* background-color: blueviolet; */
+    }
+
+    #hchild4 {
+        font-size: .5rem !important;
+    }
+
+    .banner .bchild2 {
+        width: 100%;
+        /* background-color: black; */
+    }
+
+    .banner .bchild2 .form .danger {
+        position: absolute;
+        /* background-color: white; */
+        right: 23% !important;
+        top: 19% !important;
+
+    }
+
+    .banner .bchild2 .form a {
+
+        padding: 1rem !important;
+    }
+
+    .banner .bchild2 .form a {
+
+        padding: 1rem !important;
+    }
+
+
+    .banner2 {
+        padding: 1rem 1rem !important;
+        /* background-color: blue; */
+    }
+
+    .banner3 {
+        display: flex;
+        gap: 2.5rem !important;
+        /* padding: 15rem 0 !important; */
+        /* background-color: blue; */
+
+    }
+
+    .b3child {
+
+        gap: 0rem !important;
+
+    }
+
+    .subchild {
+        width: 100% !important;
+        position: relative;
+        /* background-color: blue; */
+        height: 25rem !important;
+    }
+
+    .schld {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 22rem;
+        flex-direction: column;
+        position: relative;
+        gap: .8rem;
+        /* background-color: rgb(94, 86, 101); */
+
+        .bTitle {
+            position: relative;
+            width: 70%;
+            font-size: 1rem !important;
+            font-weight: bold;
+        }
+
+        .btext {
+            position: relative;
+            width: 70%;
+            font-size: .9rem !important;
+        }
+
+
+
+
+
+    }
+
+    .bTitle {
+        /* background-color: blueviolet; */
+        position: relative;
+        width: 100% !important;
+        font-size: 1.6rem !important;
+        text-align: center;
+    }
+
+
+    .container {
+        /* background-color: blueviolet; */
+        width: 100% !important;
+
+
+    }
+
+
+    .container .box {
+        /* background-color: blueviolet; */
+        flex-basis: .1% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 !important;
+        border-radius: 20px;
+
+
+    }
+
+
+    .container .box .userinfo h3 {
+
+        /* background-color: blue; */
+        font-size: .9rem !important;
+        font-weight: bolder !important;
+    }
+
+    .container .box .userinfo p {
+
+        /* background-color: blue; */
+        font-size: .7rem !important;
+
+    }
+
+
+
+
+
+
+    .btext {
+        text-align: center;
+        font-size: 1.2rem !important;
+    }
+
+
+    .container .box img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    .footer .pp .fot1 {
+        flex-direction: column;
+
+        /* background-color: red; */
+    }
+
+    .footer .pp {
+
+        padding: 0 .5rem !important;
+        /* background-color: red; */
+    }
+
+    .footer .fot2 .pikin {
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        /* background-color: red; */
+        width: 90% !important;
+        justify-content: center !important;
+    }
+
+    .footer .fot2 {
+        width: 50%;
+    }
+
+    .footer .fot2 a {
+        /* background-color: red; */
+        font-size: 1rem;
+        position: relative;
+        transition: ease-in-out .5s;
+
+    }
+
+
+    .footer .fot1 a {
+        /* background-color: red; */
+        font-size: .8rem;
+
+
+    }
+
+
+
+}
+
+@media (min-width:171px) and (max-width:300px) {
+    .header {
+        padding: .3rem;
+        flex-direction: column !important;
+        justify-content: center !important;
+        gap: 1rem;
+    }
+
+    .header .hchild {
+        font-size: .8rem !important;
+        width: 100% !important;
+
+        /* background-color: black; */
+    }
+
+
+    .header a {
+        display: flex;
+        justify-content: center !important;
+        padding: .5rem 1rem !important;
+
+
+    }
+
+    .header .spantag span {
+        font-size: 1.2rem !important;
+        /* background-color: blueviolet; */
+        font-weight: bold;
+    }
+
+    .banner {
+        padding: 0 .252rem;
+    }
+
+    .banner .bchild1 {
+        /* background-color: blue; */
+        width: 100%;
+        font-size: 2rem;
+
+    }
+
+    .banner .bchild2 .form {
+        /* background-color: brown; */
+        flex-direction: column;
+        width: 100% !important;
+
+    }
+
+
+    .banner5 .bchild5 .b5form {
+        flex-direction: column;
+        width: 100% !important;
+
+    }
+
+    .banner .bchild2 .form input {
+        gap: .6rem;
+        padding: .8rem;
+        font-size: .8rem !important;
+        width: 10rem;
+        /* background-color: blueviolet; */
+
+    }
+
+
+    .banner2 .b2child {
+        .title {
+            /* background-color: blue; */
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .word {
+            /* background-color: red; */
+            text-align: center;
+            font-size: 1rem;
+        }
+    }
+
+    .banner5 .bchild5 .b5form input {
+        gap: .6rem;
+        padding: .8rem;
+        font-size: .8rem !important;
+        width: 10rem;
+        /* background-color: blueviolet; */
+
+    }
+
+    .banner .bchild2 {
+        width: 100%;
+        /* background-color: black; */
+    }
+
+    .banner .bchild2 .form .danger {
+        position: absolute;
+        /* background-color: white; */
+        right: 23% !important;
+        top: 19% !important;
+
+    }
+
+    .banner .bchild2 .form a {
+
+        padding: 1rem !important;
+    }
+
+    .banner .bchild2 .form a {
+
+        padding: 1rem !important;
+    }
+
+
+    .banner2 {
+        padding: 1rem 1rem !important;
+    }
+
+
+
+
+    .subchild {
+        width: 100% !important;
+        position: relative;
+    }
+
+    .banner3 {
+        gap: 2rem !important;
+        /* background-color: blue; */
+    }
+
+    .b3child3 {
+        padding-top: 1rem !important;
+        gap: 1.5rem !important;
+    }
+
+    .schld {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 28rem !important;
+        flex-direction: column;
+        position: relative;
+        gap: .8rem;
+        /* background-color: rgb(94, 86, 101); */
+
+        .bTitle {
+            position: relative;
+            width: 70%;
+            font-size: 1.4rem !important;
+            font-weight: bold;
+        }
+
+        .btext {
+            position: relative;
+            width: 70%;
+            font-size: 1.2rem;
+        }
+
+    }
+
+    .bTitle {
+        /* background-color: blueviolet; */
+        position: relative;
+        width: 100% !important;
+        font-size: 1.6rem !important;
+        text-align: center;
+    }
+
+    .btext {
+        text-align: center;
+        font-size: 1.2rem !important;
+    }
+
+    .footer .pp .fot1 a {
+        font-size: .65rem;
+    }
+
+    .footer .fot2 a {
+        /* background-color: red; */
+        font-size: 1rem;
+        transition: ease-in-out .5s;
+
+    }
+
+}
+
+@media (min-width:300.1px) and (max-width:399.99px) {
+
+    .header {
+        padding: .3rem;
+        flex-direction: column !important;
+        justify-content: center !important;
+        gap: 1rem;
+    }
+
+    .header .hchild {
+        font-size: .8rem !important;
+        width: 100% !important;
+
+        /* background-color: black; */
+    }
+
+
+    .header a {
+        display: flex;
+        justify-content: center !important;
+        padding: .5rem 1rem !important;
+
+
+    }
+
+    .header .spantag span {
+        font-size: 1.2rem !important;
+        /* background-color: blueviolet; */
+        font-weight: bold;
+    }
+
+    .banner {
+        padding: 0 .252rem;
+    }
+
+    .banner .bchild2 .form {
+        /* background-color: brown; */
+        flex-direction: column;
+        width: 100% !important;
+
+    }
+
+
+
+    .banner5 .bchild5 .b5form {
+        flex-direction: column;
+        width: 100% !important;
+    }
+
+    .banner .bchild2 .form .danger {
+
+        right: 18%;
+        top: 23%;
+
+    }
+
+
+    .subchild {
+        width: 100% !important;
+        position: relative;
+    }
+
+    .schld {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 22rem;
+        flex-direction: column;
+        position: relative;
+        gap: .8rem;
+        /* background-color: blueviolet; */
+
+        .bTitle {
+            position: relative;
+            width: 90% !important;
+            font-size: 1.4rem !important;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .btext {
+            position: relative;
+            width: 70%;
+            font-size: 1.2rem;
+        }
+
+    }
+
+    .banner .bchild2 .form input {
+        padding: .8rem;
+        gap: .6rem;
+        padding: 1.2rem;
+        font-size: 1.2rem;
+        /* width: 13rem; */
+        /* background-color: blueviolet; */
+
+    }
+
+
+    .banner5 .bchild5 .b5form input {
+        padding: .8rem;
+        gap: .6rem;
+        padding: 1.2rem;
+        font-size: 1.2rem;
+    }
+
+
+    .footer .pp .fot1 a {
+
+        /* background-color: red; */
+        font-size: .8rem;
+    }
+
+    .banner .bchild2 .labell span {
+        font-size: 1.7rem;
+        color: white;
+    }
+
+    .banner5 .bchild5 {
+        /* background-color: blue; */
+        font-size: 1.7rem;
+
+    }
+
+    .banner .bchild1 {
+        /* background-color: blue; */
+        width: 100%;
+
+    }
+
+    .banner .bchild2 .form a {
+        font-size: 1.3rem;
+        background-color: rgba(138, 43, 226, 0.9);
+        padding: .8rem !important;
+        border-radius: 10px;
+        color: white;
+        transition: ease-in-out .5s;
+
+        &:hover {
+            background-color: blue;
+        }
+    }
+
+    .banner5 .bchild5 .b5form a {
+        font-size: 1.3rem;
+        background-color: rgba(138, 43, 226, 0.9);
+        padding: .8rem !important;
+        border-radius: 10px;
+        color: white;
+        transition: ease-in-out .5s;
+
+        &:hover {
+            background-color: blue;
+        }
+    }
+
+}
+
+@media (min-width:400px) and (max-width:699.99px) {
+    .banner .bchild1 {
+        width: 100%;
+        font-size: 2rem;
+
+    }
+
+    .header .hchild {
+        font-size: .9rem;
+
+    }
+
+    .header a {
+
+        justify-content: center;
+        padding: .5rem;
+
+    }
+
+    .subchild {
+        width: 100% !important;
+        position: relative;
+        /* background-color: blue; */
+
+    }
+
+    .title {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+
+    .bTitle {
+        /* background-color: blueviolet; */
+        position: relative;
+        width: 100% !important;
+        font-size: 2rem !important;
+        text-align: center;
+    }
+
+    .btext {
+        text-align: center;
+        font-size: 1.4rem !important;
+    }
+
+
+}
+
+@media (max-width:500.99px) {
+
+    .banner .bchild2 .form {
+        /* background-color: brown; */
+        width: 25%;
+
+    }
+
+
+    .container {
+        /* background-color: brown; */
+        flex-wrap: wrap;
+        flex-direction: column;
+
+
+    }
+
+    .banner .bchild2 .form input {
+        padding: .8rem;
+        gap: .6rem;
+        padding: 1.2rem;
+        font-size: 1.2rem;
+        /* width: 13rem; */
+        /* background-color: blueviolet; */
+
+    }
+
+    .banner5 .bchild5 .b5form input {
+        padding: .8rem;
+        gap: .6rem;
+        padding: 1.2rem;
+        font-size: 1.2rem;
+    }
+
+
+
+
+    .banner .bchild2 .form a {
+
+        padding: .5rem;
+    }
+
+}
+
+@media (min-width:850px) and (max-width:1000.99px) {
+
+    .banner .bchild2 .form input {
+        gap: .6rem;
+        padding: 1.5rem 3.5rem;
+        /* background-color: brown; */
+
+    }
+
+    .banner5 .bchild5 .b5form input {
+        gap: .6rem;
+        padding: 1.5rem 3.5rem;
+        /* background-color: brown; */
+    }
+
+}
+
+@media (min-width:700px) and (max-width:1180.99px) {
+
+    .subchild {
+        width: 100% !important;
+        position: relative;
+
+
+
+    }
+
+
+    .schld {
+
+        .bTitle {
+            position: relative;
+            width: 90% !important;
+            font-size: 1.8rem !important;
+            font-weight: bold;
+        }
+
+        .btext {
+            position: relative;
+            width: 70%;
+            font-size: 1.6rem !important;
+        }
+
+    }
+
+}
+
+@media (min-width:400px) and (max-width:580.99px) {
+    .banner .bchild2 .form {
+        position: relative;
+        /* background-color: brown; */
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .banner .bchild2 .form .danger {
+
+        right: 35%;
+        top: 40%;
+
+    }
+
+}
+
+@media (min-width:1180.99px) {
+    /* .banner3 {
+        background-color: blue;
+    } */
+
+    .b3child2 {
+        flex-direction: row-reverse !important;
+    }
+}
+
+@media (max-width:1179.99px) {
+    .b3child {
+        flex-direction: column;
+    }
+}
+
+@media (min-width:500px) and (max-width:1180.99px) {
+    .container {
+
+        flex-wrap: wrap;
+        flex-direction: column;
+
+
+    }
+
+
+    .container .box .userinfo {
+        position: relative;
+        /* background-color: darkblue; */
+        width: 50% !important;
+        border-radius: 20px;
+        padding: 10px;
+        color: black;
+    }
+}
+
+@media (max-width:800px) {
+
+    .footer {
+        background-color: #F8F9FA;
+        /* background-color: coral; */
+        flex-direction: column;
+        padding: 1rem 0 !important;
+        /* background-color: blue; */
+
+    }
+
+    .ftchild {
+        flex-basis: 50%;
+
+
+        justify-content: center;
+
+    }
+
+    .fot2 {
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: end;
+        padding: .3rem !important;
+        align-items: center;
+    }
+
+    /* 
+    .fot1 {
+        background-color: red;
+    } */
+}

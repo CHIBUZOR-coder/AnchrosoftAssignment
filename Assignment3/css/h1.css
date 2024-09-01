@@ -1,0 +1,21 @@
+h1 {
+    background-color: blue;
+    color: antiquewhite;
+    width: 200px;
+    height: 200px;
+}
+
+.Chisco {
+    background-color: red;
+    color: antiquewhite;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 20px black;
+}
+
+#dav {
+    background-color: rgb(20, 20, 44);
+    color: rgb(150, 126, 94);
+    width: 180px;
+    height: 180px;
+}

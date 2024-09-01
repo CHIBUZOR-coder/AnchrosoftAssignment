@@ -1,0 +1,23 @@
+h5 {
+    background-color: rgba(45, 43, 41, 0.783);
+    color: rgba(137, 43, 226, 0.696);
+    width: 700px;
+    height: 30px;
+}
+
+
+.nel {
+    background-color: rgba(226, 97, 4, 0.864);
+    color: rgba(127, 210, 12, 0.631);
+    width: 500px;
+    height: 30px;
+}
+
+
+#nell {
+    background-color: rgba(230, 102, 10, 0.336);
+    color: rgba(36, 53, 12, 0.631);
+    width: 900px;
+    height: 30px;
+
+}

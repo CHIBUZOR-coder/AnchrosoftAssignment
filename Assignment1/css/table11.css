@@ -1,0 +1,55 @@
+table,
+th,
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+table {
+ 
+    background-color: blueviolet;
+    color: whitesmoke;
+    width: 70%;
+    font-size: larger;
+    border-collapse: collapse;
+
+}
+
+table:hover{
+    background-color: rgba(137, 43, 226, 0.529);
+    color: blue;
+}
+
+table th {
+    color: black;
+}
+
+
+
+.num {
+    color: black;
+    
+}
+
+.num:hover {
+    background-color: red;
+    color: black;
+}
+
+
+
+
+.star {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-style: italic;
+}
+
+
+table {
+    border-radius: 4px;
+
+}
+
+#leo {
+    background-color: red;
+}
