@@ -8,6 +8,7 @@ module.exports = {
         headerBtnText: "rgb(205,162,116)",
         trans: "	rgba(30, 26, 26, 0.6)",
         trans2: "rgba(255, 255, 255, 0.5)",
+        banner3: "rgb(4,48,64)",
       },
       boxShadow: {
         thick: "rgba(0, 0, 0, 1)",

@@ -8,29 +8,74 @@ const arrLeft = document.querySelector(".arrLeft");
 // Store the currently active SVG
 let currentActiveSVG = null;
 
-deligate.addEventListener("click", (e) => {
-  // Check if the clicked target is an SVG or its parent span
-  if (
-    e.target.tagName === "svg" ||
-    e.target.tagName === "path" ||
-    e.target.closest(".firstt")
-  ) {
-    // Find the SVG element
-    let clickedSVG = e.target.tagName === "svg" ? e.target : e.target.closest("svg");
+// deligate.addEventListener("click", (e) => {
+//   // Check if the clicked target is an SVG or its parent span
+//   if (
+//     e.target.tagName === "svg" ||
+//     e.target.tagName === "path" ||
+//     e.target.closest(".firstt")
+//   ) {
+//     // Find the SVG element
+//     let clickedSVG = e.target.tagName === "svg" ? e.target : e.target.closest("svg");
 
-    // If there's a previously active SVG, reset its stroke color
-    if (currentActiveSVG && currentActiveSVG !== clickedSVG) {
-      currentActiveSVG.setAttribute("stroke", "currentColor"); // Reset to default color
+//     // If there's a previously active SVG, reset its stroke color
+//     if (currentActiveSVG && currentActiveSVG !== clickedSVG) {
+//       currentActiveSVG.setAttribute("stroke", "currentColor"); // Reset to default color
+//     }
+
+//     // Set the stroke color to red for the clicked SVG
+//     clickedSVG.setAttribute("stroke", "rgb(205,162,116)");
+    
+//     // Update the currently active SVG
+//     currentActiveSVG = clickedSVG;
+
+//     // Find the next sibling span with class 'next'
+//     let nextElement = e.target.closest(".firstt").querySelector(".next");
+
+//     // Hide the currently visible element if it's not the clicked one
+//     if (currentVisible && currentVisible !== nextElement) {
+//       currentVisible.classList.add("hidden");
+//     }
+
+//     // Toggle visibility of the clicked element's next sibling
+//     if (nextElement.classList.contains("hidden")) {
+//       nextElement.classList.remove("hidden");
+//       currentVisible = nextElement; // Update the currently visible element
+//     } else {
+//       nextElement.classList.add("hidden");
+//       currentVisible = null; // No element is visible now
+//     }
+//   }
+// });
+
+
+deligate.addEventListener("click", (e) => {
+  // Check if the clicked target is the Font Awesome icon or its parent span
+  if (
+    e.target.classList.contains("fa-chevron-down") ||
+    e.target.closest(".svg")
+  ) {
+    // Find the closest parent span with class 'firstt'
+    let parentSpan = e.target.closest(".firstt");
+
+    // Find the Font Awesome icon element
+    let clickedIcon = e.target.classList.contains("fa-chevron-down")
+      ? e.target
+      : e.target.closest(".fa-chevron-down");
+
+    // If there's a previously active icon, reset its color
+    if (currentActiveSVG && currentActiveSVG !== clickedIcon) {
+      currentActiveSVG.style.color = "currentColor"; // Reset to default color
     }
 
-    // Set the stroke color to red for the clicked SVG
-    clickedSVG.setAttribute("stroke", "rgb(205,162,116)");
-    
-    // Update the currently active SVG
-    currentActiveSVG = clickedSVG;
+    // Set the color to a specific shade for the clicked icon
+    clickedIcon.style.color = "rgb(205,162,116)";
+
+    // Update the currently active icon
+    currentActiveSVG = clickedIcon;
 
     // Find the next sibling span with class 'next'
-    let nextElement = e.target.closest(".firstt").querySelector(".next");
+    let nextElement = parentSpan.querySelector(".next");
 
     // Hide the currently visible element if it's not the clicked one
     if (currentVisible && currentVisible !== nextElement) {
@@ -47,8 +92,6 @@ deligate.addEventListener("click", (e) => {
     }
   }
 });
-
-
 
 
 

@@ -639,6 +639,10 @@ video {
   height: 3.5rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-\[100px\] {
   height: 100px;
 }
@@ -653,6 +657,18 @@ video {
 
 .h-\[250px\] {
   height: 250px;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
+.h-44 {
+  height: 11rem;
 }
 
 .w-1\/2 {
@@ -745,6 +761,11 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.bg-banner3 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 48 64 / var(--tw-bg-opacity));
 }
 
 .bg-header {
@@ -1014,6 +1035,13 @@ body {
 .line1:hover {
   --tw-text-opacity: 1;
   color: rgb(205 162 116 / var(--tw-text-opacity));
+}
+
+/* Style only the active SVG */
+
+svg[data-active="true"] {
+  stroke: red;
+  /* Change to the color you want for the active SVG */
 }
 
 .san {
