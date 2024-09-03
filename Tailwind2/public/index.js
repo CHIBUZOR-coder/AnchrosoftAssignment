@@ -62,7 +62,7 @@ function changeHeroBackgroundImage() {
 }
 
 // Change hero background image every 5 seconds (adjust the interval as needed)
-setInterval(changeHeroBackgroundImage, 10000);
+setInterval(changeHeroBackgroundImage, 5000);
 
 arrRight.addEventListener("click", () => {
   currentIndex = (currentIndex + 1) % heroImages.length;
