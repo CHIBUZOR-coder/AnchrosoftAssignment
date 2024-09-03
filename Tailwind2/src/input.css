@@ -12,9 +12,17 @@ body {
   z-index: 10;
 }
 
-.head1{
-   font-weight: 400;
+.head1 {
+  font-weight: 400;
 }
+
+.next{
+  border: 0.5px solid black;
+  border-radius: 4px;
+}
+
+
+
 
 /*** HOME***/
 @keyframes slideHOME {
@@ -110,26 +118,31 @@ body {
 }
 
 .first2 {
-@apply  text-[9.5px] lg:text-head
+  @apply text-[9.5px] lg:text-head;
 }
 .size-6 {
   @apply w-5 h-5;
 }
 .firstt {
-  @apply flex text-[9.5px] lg:text-head justify-center items-center p-0 lg:p-2 ;
+  @apply flex text-[9.5px] lg:text-head justify-center items-center p-0 lg:p-2;
 }
-
-
 
 .first2 {
   @apply bg-headerBtnText  font-semibold px-2 py-1 text-white;
 }
 
-
 .line1 {
-  @apply hover:text-headerBtnText cursor-pointer transition ease-out duration-700 ;
+  @apply hover:text-headerBtnText cursor-pointer transition ease-out duration-700;
 }
 
 .san {
-  @apply h-16;
+  @apply h-[81px];
 }
+.first3{
+  @apply hover:text-headerBtnText cursor-pointer hover:scale-125 transition ease-out duration-700;
+}
+
+.arrows{
+  @apply text-white  text-[30px] cursor-pointer
+}
+
