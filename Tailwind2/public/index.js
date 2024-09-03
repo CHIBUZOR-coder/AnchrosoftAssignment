@@ -4,6 +4,10 @@ const arrRight = document.querySelector(".arrRight");
 // console.log(arrRight);
 const arrLeft = document.querySelector(".arrLeft");
 
+
+// Store the currently active SVG
+let currentActiveSVG = null;
+
 deligate.addEventListener("click", (e) => {
   // Check if the clicked target is an SVG or its parent span
   if (
@@ -11,6 +15,20 @@ deligate.addEventListener("click", (e) => {
     e.target.tagName === "path" ||
     e.target.closest(".firstt")
   ) {
+    // Find the SVG element
+    let clickedSVG = e.target.tagName === "svg" ? e.target : e.target.closest("svg");
+
+    // If there's a previously active SVG, reset its stroke color
+    if (currentActiveSVG && currentActiveSVG !== clickedSVG) {
+      currentActiveSVG.setAttribute("stroke", "currentColor"); // Reset to default color
+    }
+
+    // Set the stroke color to red for the clicked SVG
+    clickedSVG.setAttribute("stroke", "red");
+    
+    // Update the currently active SVG
+    currentActiveSVG = clickedSVG;
+
     // Find the next sibling span with class 'next'
     let nextElement = e.target.closest(".firstt").querySelector(".next");
 
@@ -29,6 +47,49 @@ deligate.addEventListener("click", (e) => {
     }
   }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// deligate.addEventListener("click", (e) => {
+//   // Check if the clicked target is an SVG or its parent span
+//   if (
+//     e.target.tagName === "svg" ||
+//     e.target.tagName === "path" ||
+//     e.target.closest(".firstt")
+//   ) {
+//     // Find the next sibling span with class 'next'
+//     let nextElement = e.target.closest(".firstt").querySelector(".next");
+
+//     // Hide the currently visible element if it's not the clicked one
+//     if (currentVisible && currentVisible !== nextElement) {
+//       currentVisible.classList.add("hidden");
+//     }
+
+//     // Toggle visibility of the clicked element's next sibling
+//     if (nextElement.classList.contains("hidden")) {
+//       nextElement.classList.remove("hidden");
+//       nextElement.style.color = "red";
+//       currentVisible = nextElement; // Update the currently visible element
+//     } else {
+//       nextElement.classList.add("hidden");
+//       currentVisible = null; // No element is visible now
+//     }
+//   }
+// });
 
 //images
 const heroImages = [

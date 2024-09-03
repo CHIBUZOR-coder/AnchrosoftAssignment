@@ -135,6 +135,12 @@ body {
   @apply hover:text-headerBtnText cursor-pointer transition ease-out duration-700;
 }
 
+/* Style only the active SVG */
+svg[data-active="true"] {
+  stroke: red; /* Change to the color you want for the active SVG */
+}
+
+
 .san {
   @apply h-[81px];
 }
