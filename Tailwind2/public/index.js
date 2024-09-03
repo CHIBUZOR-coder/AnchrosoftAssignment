@@ -24,7 +24,7 @@ deligate.addEventListener("click", (e) => {
     }
 
     // Set the stroke color to red for the clicked SVG
-    clickedSVG.setAttribute("stroke", "red");
+    clickedSVG.setAttribute("stroke", "rgb(205,162,116)");
     
     // Update the currently active SVG
     currentActiveSVG = clickedSVG;
