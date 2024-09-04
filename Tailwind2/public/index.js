@@ -5,17 +5,32 @@ let currentVisible = null;
 let currentActiveSVG = null;
 deligate.addEventListener("click", (e) => {
   // Check if the clicked target is the Font Awesome icon or its parent span
-  if (
-    e.target.classList.contains("fa-chevron-down") ||
-    e.target.closest(".svg")
-  ) {
-    // Find the closest parent span with class 'firstt'
-    let parentSpan = e.target.closest(".firstt");
-
+  if (e.target.closest(".svg")) {
     // Find the Font Awesome icon element
     let clickedIcon = e.target.classList.contains("fa-chevron-down")
       ? e.target
       : e.target.closest(".fa-chevron-down");
+
+    //Toggle visibility
+    // Find the closest parent span with class 'firstt'
+    let parentSpan = e.target.closest(".firstt");
+
+    // Find the next sibling span with class 'next'
+    let next = parentSpan.querySelector(".next");
+
+    // Hide the currently visible element if it's not the clicked one
+    if (currentVisible && currentVisible !== next) {
+      currentVisible.classList.add("hidden");
+    }
+
+    // Toggle visibility of the clicked element's next sibling
+    if (next.classList.contains("hidden")) {
+      next.classList.remove("hidden");
+      currentVisible = next; // Update the currently visible element
+    } else {
+      next.classList.add("hidden");
+      currentVisible = null; // No element is visible now
+    }
 
     // If there's a previously active icon, reset its color
     if (currentActiveSVG && currentActiveSVG !== clickedIcon) {
@@ -27,28 +42,9 @@ deligate.addEventListener("click", (e) => {
 
     // Update the currently active icon
     currentActiveSVG = clickedIcon;
-
-    // Find the next sibling span with class 'next'
-    let nextElement = parentSpan.querySelector(".next");
-
-    // Hide the currently visible element if it's not the clicked one
-    if (currentVisible && currentVisible !== nextElement) {
-      currentVisible.classList.add("hidden");
-    }
-
-    // Toggle visibility of the clicked element's next sibling
-    if (nextElement.classList.contains("hidden")) {
-      nextElement.classList.remove("hidden");
-      currentVisible = nextElement; // Update the currently visible element
-    } else {
-      nextElement.classList.add("hidden");
-      currentVisible = null; // No element is visible now
-    }
   }
 });
 //*********************************************************************************** */
-
-
 
 //Herobanner Image Slider
 const arrRight = document.querySelector(".arrRight");
@@ -67,11 +63,8 @@ function changeHeroBackgroundImage() {
   var heroElement = document.querySelector(".Hero");
   // heroElement.style.backgroundImage = "url(" + heroImages[currentIndex] + ")";
   heroElement.style.backgroundImage = `url(${heroImages[currentIndex]})`;
-
 }
 //**********************************************************
-
-
 
 // Change hero background image every 5 seconds (adjust the interval as needed)
 setInterval(changeHeroBackgroundImage, 5000);
@@ -94,22 +87,22 @@ arrLeft.addEventListener("click", () => {
 });
 // ****************************************************************************/
 
-
-
-//Date 
+//Date
 function makeTextEditable(element) {
   element.addEventListener("click", function () {
     const input = document.createElement("input");
     input.type = "date";
     input.className = "arrival-input";
-    input.value =
-      element.textContent !== "Arrival Date" ? element.textContent : "";
+   input.value =
+  element.textContent === "Arrival Date" ? "" : element.textContent;
+
 
     // Replace the text with the input field
     element.replaceWith(input);
 
     // Focus on the input field
-    input.focus();
+    // input.focus();
+    input.style.outline = "none";
 
     // Handle when the user clicks outside or hits Enter to confirm the date
     input.addEventListener("blur", function () {
@@ -117,6 +110,7 @@ function makeTextEditable(element) {
       newText.className = "pikin2";
       newText.textContent = input.value || "Arrival Date";
       input.replaceWith(newText);
+      
 
       // Reattach the click event to the new paragraph
       makeTextEditable(newText);
