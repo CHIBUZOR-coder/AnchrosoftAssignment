@@ -167,3 +167,9 @@ svg[data-active="true"] {
   line-height: 37px;
   font-family: "Playfair Display", serif;
 }
+.checkk {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  line-height: 20px;
+}

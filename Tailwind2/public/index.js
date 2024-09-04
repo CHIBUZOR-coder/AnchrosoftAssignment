@@ -94,47 +94,6 @@ deligate.addEventListener("click", (e) => {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// deligate.addEventListener("click", (e) => {
-//   // Check if the clicked target is an SVG or its parent span
-//   if (
-//     e.target.tagName === "svg" ||
-//     e.target.tagName === "path" ||
-//     e.target.closest(".firstt")
-//   ) {
-//     // Find the next sibling span with class 'next'
-//     let nextElement = e.target.closest(".firstt").querySelector(".next");
-
-//     // Hide the currently visible element if it's not the clicked one
-//     if (currentVisible && currentVisible !== nextElement) {
-//       currentVisible.classList.add("hidden");
-//     }
-
-//     // Toggle visibility of the clicked element's next sibling
-//     if (nextElement.classList.contains("hidden")) {
-//       nextElement.classList.remove("hidden");
-//       nextElement.style.color = "red";
-//       currentVisible = nextElement; // Update the currently visible element
-//     } else {
-//       nextElement.classList.add("hidden");
-//       currentVisible = null; // No element is visible now
-//     }
-//   }
-// });
-
-//images
 const heroImages = [
   "./images/eko1.jpg",
   "images/eko2.jpg",
@@ -183,3 +142,49 @@ arrLeft.addEventListener("click", () => {
   // heroElement.style.backgroundImage = "url(" + heroImages[currentIndex] + ")";
   heroElement.style.backgroundImage = `url(${heroImages[currentIndex]})`;
 });
+
+
+
+
+
+
+
+
+
+
+
+function makeTextEditable(element) {
+  element.addEventListener("click", function () {
+    const input = document.createElement("input");
+    input.type = "date";
+    input.className = "arrival-input";
+    input.value =
+      element.textContent !== "Arrival Date" ? element.textContent : "";
+
+    // Replace the text with the input field
+    element.replaceWith(input);
+
+    // Focus on the input field
+    input.focus();
+
+    // Handle when the user clicks outside or hits Enter to confirm the date
+    input.addEventListener("blur", function () {
+      const newText = document.createElement("p");
+      newText.className = "pikin2";
+``      newText.textContent = input.value || "Arrival Date";
+      input.replaceWith(newText);
+
+      // Reattach the click event to the new paragraph
+      makeTextEditable(newText);
+    });
+
+    input.addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        input.blur(); // Trigger the blur event
+      }
+    });
+  });
+}
+
+// Initialize the editable text
+makeTextEditable(document.getElementById("arrivalText"));
