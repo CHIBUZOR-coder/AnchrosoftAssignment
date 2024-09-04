@@ -152,7 +152,6 @@ arrLeft.addEventListener("click", () => {
 
 
 
-
 function makeTextEditable(element) {
   element.addEventListener("click", function () {
     const input = document.createElement("input");
@@ -171,7 +170,7 @@ function makeTextEditable(element) {
     input.addEventListener("blur", function () {
       const newText = document.createElement("p");
       newText.className = "pikin2";
-``      newText.textContent = input.value || "Arrival Date";
+      newText.textContent = input.value || "Arrival Date";
       input.replaceWith(newText);
 
       // Reattach the click event to the new paragraph
