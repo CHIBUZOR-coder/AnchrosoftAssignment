@@ -16,13 +16,10 @@ body {
   font-weight: 400;
 }
 
-.next{
+.next {
   border: 0.5px solid black;
   border-radius: 4px;
 }
-
-
-
 
 /*** HOME***/
 @keyframes slideHOME {
@@ -140,15 +137,33 @@ svg[data-active="true"] {
   stroke: red; /* Change to the color you want for the active SVG */
 }
 
-
 .san {
   @apply h-[81px];
 }
-.first3{
+.first3 {
   @apply hover:text-headerBtnText cursor-pointer hover:scale-125 transition ease-out duration-700;
 }
 
-.arrows{
-  @apply text-white  text-[30px] cursor-pointer
+.arrows {
+  @apply text-white  text-[30px] cursor-pointer;
 }
 
+.arriv {
+  @apply flex flex-col justify-center items-center text-center;
+}
+
+.pikin1 {
+  @apply text-headerBtnText text-[12px];
+}
+.pikin1 {
+  letter-spacing: 4px;
+  line-height: 20px;
+}
+.pikin2 {
+  @apply text-banner3Text2 text-[25px];
+}
+.pikin2 {
+  letter-spacing: 1px;
+  line-height: 37px;
+  font-family: "Playfair Display", serif;
+}

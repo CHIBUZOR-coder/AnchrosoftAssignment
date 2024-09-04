@@ -9,6 +9,7 @@ module.exports = {
         trans: "	rgba(30, 26, 26, 0.6)",
         trans2: "rgba(255, 255, 255, 0.5)",
         banner3: "rgb(4,48,64)",
+        banner3Text2: "rgb(85,85,85)",
       },
       boxShadow: {
         thick: "rgba(0, 0, 0, 1)",

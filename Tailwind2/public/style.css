@@ -614,6 +614,10 @@ video {
   margin: 0.25rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -639,10 +643,6 @@ video {
   height: 3.5rem;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
 .h-\[100px\] {
   height: 100px;
 }
@@ -657,18 +657,6 @@ video {
 
 .h-\[250px\] {
   height: 250px;
-}
-
-.h-32 {
-  height: 8rem;
-}
-
-.h-3 {
-  height: 0.75rem;
-}
-
-.h-44 {
-  height: 11rem;
 }
 
 .w-1\/2 {
@@ -739,6 +727,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .gap-1 {
   gap: 0.25rem;
 }
@@ -773,6 +765,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-headerBtnText {
+  --tw-bg-opacity: 1;
+  background-color: rgb(205 162 116 / var(--tw-bg-opacity));
+}
+
 .bg-red-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(127 29 29 / var(--tw-bg-opacity));
@@ -794,12 +791,21 @@ video {
   background-position: center;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
 
 .p-4 {
   padding: 1rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-12 {
@@ -827,8 +833,36 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .transition-all {
@@ -859,7 +893,7 @@ body {
   font-weight: 400;
 }
 
-.next{
+.next {
   border: 0.5px solid black;
   border-radius: 4px;
 }
@@ -1073,6 +1107,36 @@ svg[data-active="true"] {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.arriv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.pikin1 {
+  font-size: 12px;
+  --tw-text-opacity: 1;
+  color: rgb(205 162 116 / var(--tw-text-opacity));
+  letter-spacing: 4px;
+  line-height: 20px;
+}
+
+.pikin2 {
+  font-size: 25px;
+  --tw-text-opacity: 1;
+  color: rgb(85 85 85 / var(--tw-text-opacity));
+  letter-spacing: 1px;
+  line-height: 37px;
+  font-family: "Playfair Display", serif;
+}
+
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:block {
     display: block;
@@ -1093,4 +1157,3 @@ svg[data-active="true"] {
     padding-right: 3rem;
   }
 }
-
