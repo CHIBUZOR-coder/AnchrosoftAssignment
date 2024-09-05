@@ -602,8 +602,8 @@ video {
   top: 2.5rem;
 }
 
-.top-\[408px\] {
-  top: 408px;
+.top-\[300px\] {
+  top: 300px;
 }
 
 .z-40 {
@@ -639,12 +639,12 @@ video {
   height: 3.5rem;
 }
 
-.h-\[100px\] {
-  height: 100px;
+.h-8 {
+  height: 2rem;
 }
 
-.h-\[100vh\] {
-  height: 100vh;
+.h-\[100px\] {
+  height: 100px;
 }
 
 .h-\[200px\] {
@@ -655,12 +655,8 @@ video {
   height: 250px;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
-.h-16 {
-  height: 4rem;
+.h-\[50vh\] {
+  height: 50vh;
 }
 
 .w-1\/2 {
@@ -669,6 +665,14 @@ video {
 
 .w-3\/4 {
   width: 75%;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-80 {
@@ -703,52 +707,12 @@ video {
   width: 56%;
 }
 
+.w-\[56\] {
+  width: 56;
+}
+
 .w-full {
   width: 100%;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[40px\] {
-  width: 40px;
-}
-
-.w-\[200px\] {
-  width: 200px;
-}
-
-.w-\[210px\] {
-  width: 210px;
-}
-
-.w-\[100px\] {
-  width: 100px;
-}
-
-.w-\[150px\] {
-  width: 150px;
-}
-
-.w-\[170px\] {
-  width: 170px;
-}
-
-.w-\[4rem\] {
-  width: 4rem;
-}
-
-.w-\[10rem\] {
-  width: 10rem;
-}
-
-.w-\[20rem\] {
-  width: 20rem;
-}
-
-.w-\[16rem\] {
-  width: 16rem;
 }
 
 .flex-col {
@@ -807,16 +771,8 @@ video {
   gap: 2rem;
 }
 
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.divide-transparent > :not([hidden]) ~ :not([hidden]) {
-  border-color: transparent;
-}
-
-.text-ellipsis {
-  text-overflow: ellipsis;
+.gap-\[17\.69px\] {
+  gap: 17.69px;
 }
 
 .bg-banner3 {
@@ -832,11 +788,6 @@ video {
 .bg-headerBtnText {
   --tw-bg-opacity: 1;
   background-color: rgb(205 162 116 / var(--tw-bg-opacity));
-}
-
-.bg-red-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(127 29 29 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/images\/eko1\.jpg\'\)\] {
@@ -868,9 +819,14 @@ video {
   padding-right: 2.5rem;
 }
 
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-6 {
@@ -903,39 +859,9 @@ video {
   padding-bottom: 1rem;
 }
 
-.py-\[50px\] {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
-.py-\[\] {
-  padding-top: ;
-  padding-bottom: ;
-}
-
-.py-\[5px\] {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.py-\[3px\] {
-  padding-top: 3px;
-  padding-bottom: 3px;
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .py-\[2px\] {
@@ -943,9 +869,9 @@ video {
   padding-bottom: 2px;
 }
 
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+.py-\[50px\] {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .pb-5 {
@@ -965,31 +891,12 @@ video {
   line-height: 1;
 }
 
-.text-\[16px\] {
-  font-size: 16px;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-\[20px\] {
-  font-size: 20px;
-}
-
 .text-\[15px\] {
   font-size: 15px;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
 }
 
 .text-\[17px\] {
@@ -1003,10 +910,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\] {
-  color: ;
 }
 
 .outline {
@@ -1185,11 +1088,6 @@ body {
   }
 }
 
-.size-6 {
-  height: 1.25rem;
-  width: 1.25rem;
-}
-
 .firstt {
   display: flex;
   align-items: center;
@@ -1300,18 +1198,52 @@ svg[data-active="true"] {
   line-height: 20px;
 }
 
+/* .size-6 {
+  width: 32px;
+  height: 32px;
+}
+ */
+
+.smallNav {
+  height: 100%;
+  opacity: 1;
+  height: auto;
+  animation: slideNav 0.7s ease-in-out forwards;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.hide {
+  display: none;
+}
+
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {
+  .md\:top-\[408px\] {
+    top: 408px;
+  }
+
   .md\:block {
     display: block;
   }
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-\[100vh\] {
+    height: 100vh;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:gap-0 {
+    gap: 0px;
   }
 }
 

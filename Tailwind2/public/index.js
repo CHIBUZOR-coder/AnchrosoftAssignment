@@ -93,9 +93,8 @@ function makeTextEditable(element) {
     const input = document.createElement("input");
     input.type = "date";
     input.className = "arrival-input";
-   input.value =
-  element.textContent === "Arrival Date" ? "" : element.textContent;
-
+    input.value =
+      element.textContent === "Arrival Date" ? "" : element.textContent;
 
     // Replace the text with the input field
     element.replaceWith(input);
@@ -110,8 +109,7 @@ function makeTextEditable(element) {
       newText.className = "pikin2";
       newText.textContent = input.value || "Arrival Date";
       input.replaceWith(newText);
-      
-
+      newText.style.color = "white";
       // Reattach the click event to the new paragraph
       makeTextEditable(newText);
     });
@@ -127,3 +125,15 @@ function makeTextEditable(element) {
 // Initialize the editable text
 makeTextEditable(document.getElementById("arrivalText"));
 //************************************************************ */
+
+//Header Toggle for Small
+const smallNav = document.querySelector(".smallNav");
+const toggler = document.querySelector(".toggler");
+
+toggler.addEventListener("click", () => {
+  if (smallNav.classList.contains("hide")) {
+    smallNav.classList.remove("hide");
+  } else {
+    smallNav.classList.add("hide");
+  }
+});

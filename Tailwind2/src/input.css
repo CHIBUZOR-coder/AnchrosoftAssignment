@@ -117,9 +117,7 @@ body {
 .first2 {
   @apply text-[9.5px] lg:text-head;
 }
-.size-6 {
-  @apply w-5 h-5;
-}
+
 .firstt {
   @apply flex text-[9.5px] lg:text-head justify-center items-center p-0 lg:p-2;
 }
@@ -172,4 +170,23 @@ svg[data-active="true"] {
   font-weight: 600;
   letter-spacing: 1.8px;
   line-height: 20px;
+}
+/* .size-6 {
+  width: 32px;
+  height: 32px;
+}
+ */
+
+
+
+.smallNav {
+  height: 100%;
+  opacity: 1;
+  height: auto;
+  animation: slideNav 0.7s ease-in-out forwards;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.hide {
+  display: none;
 }
