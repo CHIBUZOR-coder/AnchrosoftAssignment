@@ -562,6 +562,10 @@ video {
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
 .sticky {
   position: sticky;
 }
@@ -598,12 +602,16 @@ video {
   top: 0px;
 }
 
+.top-1\/2 {
+  top: 50%;
+}
+
 .top-10 {
   top: 2.5rem;
 }
 
-.top-\[300px\] {
-  top: 300px;
+.-z-10 {
+  z-index: -10;
 }
 
 .z-40 {
@@ -713,6 +721,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .flex-col {
@@ -948,6 +960,11 @@ body {
   font-weight: 300;
 }
 
+.bodyy {
+  animation-name: animaMode;
+  animation-duration: 0.9s;
+}
+
 .bigheader {
   position: relative;
   z-index: 10;
@@ -1066,6 +1083,10 @@ body {
   z-index: 1;
   cursor: pointer;
 }
+
+/* .Hero {
+  z-index: -1;
+} */
 
 .para {
   margin-top: 20px;
@@ -1204,17 +1225,42 @@ svg[data-active="true"] {
 }
  */
 
+/* Toglle method1 */
+
 .smallNav {
-  height: 100%;
-  opacity: 1;
-  height: auto;
-  animation: slideNav 0.7s ease-in-out forwards;
-  transition: background-color 0.5s ease-in-out;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-out, opacity 0.6s ease-out;
 }
 
 .hide {
-  display: none;
+  max-height: 0;
+  opacity: 1;
+  transition: max-height 0.6s ease-out;
+  overflow: hidden;
 }
+
+.expanded {
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* ***************** */
+
+/* Toggle Method2 */
+
+/* 
+.smallNav {
+  overflow: hidden;
+  max-height: 0;
+  transform-origin: top;
+  transition: max-height 0.6s ease-in-out; 
+}
+
+.smallNav.expanded {
+  max-height: 500px; 
+}  */
 
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
@@ -1222,10 +1268,6 @@ svg[data-active="true"] {
 }
 
 @media (min-width: 768px) {
-  .md\:top-\[408px\] {
-    top: 408px;
-  }
-
   .md\:block {
     display: block;
   }

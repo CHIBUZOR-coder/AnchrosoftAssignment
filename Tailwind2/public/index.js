@@ -129,11 +129,21 @@ makeTextEditable(document.getElementById("arrivalText"));
 //Header Toggle for Small
 const smallNav = document.querySelector(".smallNav");
 const toggler = document.querySelector(".toggler");
-
+const body = document.querySelector(".bodyy");
 toggler.addEventListener("click", () => {
   if (smallNav.classList.contains("hide")) {
     smallNav.classList.remove("hide");
+    smallNav.classList.add("expanded");
   } else {
     smallNav.classList.add("hide");
+    smallNav.classList.remove("expanded");
   }
 });
+
+// // Header Toggle for Small
+// const smallNav = document.querySelector(".smallNav");
+// const toggler = document.querySelector(".toggler");
+
+// toggler.addEventListener("click", () => {
+//   smallNav.classList.toggle("expanded");
+// });

@@ -7,6 +7,11 @@ body {
   font-weight: 300;
 }
 
+.bodyy {
+  animation-name: animaMode;
+  animation-duration: 0.9s;
+}
+
 .bigheader {
   position: relative;
   z-index: 10;
@@ -110,6 +115,9 @@ body {
   cursor: pointer;
 }
 
+/* .Hero {
+  z-index: -1;
+} */
 .para {
   @apply text-[9.5px] lg:text-head mt-[20px];
 }
@@ -177,16 +185,37 @@ svg[data-active="true"] {
 }
  */
 
-
+/* Toglle method1 */
 
 .smallNav {
-  height: 100%;
-  opacity: 1;
-  height: auto;
-  animation: slideNav 0.7s ease-in-out forwards;
-  transition: background-color 0.5s ease-in-out;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-out, opacity 0.6s ease-out;
 }
 
 .hide {
-  display: none;
+  max-height: 0;
+  opacity: 1;
+  transition: max-height 0.6s ease-out;
+  overflow: hidden;
 }
+
+.expanded {
+  max-height: 500px;
+  opacity: 1;
+}
+/* ***************** */
+
+/* Toggle Method2 */
+/* 
+.smallNav {
+  overflow: hidden;
+  max-height: 0;
+  transform-origin: top;
+  transition: max-height 0.6s ease-in-out; 
+}
+
+.smallNav.expanded {
+  max-height: 500px; 
+}  */

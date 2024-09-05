@@ -20,7 +20,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="">
     <!-- Big screen headers -->
 
     <div class="bigheader bg-header hidden md:block  w-full py-1 ">
@@ -290,7 +290,7 @@
             </div>
 
 
-            <span class="toggler">
+            <span class="toggler cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-6 toggle  h-8 w-8">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -303,7 +303,8 @@
         </div>
         <hr class="m-1">
     </div>
-    <div class="hide smallNav transition-all ease-in-out duration-700">
+   <div class="  sticky z-40">
+    <div class="hide smallNav relative top-0  bg-header ">
         <div class="flex flex-col px-3 py-[20px] gap-[17.69px] ">
             <span class="extra">HOME</span>
             <span class="extra">DINNING</span>
@@ -316,17 +317,18 @@
         </div>
     </div>
 
+   </div>
 
 
     <!-- HeroBacgroud Slide -->
     <div
-        class="banner1 Hero  transition-all ease-in-out duration-700 h-[50vh] md:h-[100vh] bg-[url('./images/eko1.jpg')] bg-cover bg-center">
+        class="banner1 Hero relative -z-10  transition-all ease-in-out duration-700 h-[50vh] md:h-[100vh] bg-[url('./images/eko1.jpg')] bg-cover bg-center">
 
-        <span class="arrows arrLeft absolute top-[300px] md:top-[408px] left-[23px]">
+        <span class="arrows  absolute arrLeft  top-1/2  left-[23px] ">
             <i class="fa-solid fa-arrow-left"></i>
         </span>
 
-        <span class="arrows arrRight absolute top-[300px] md:top-[408px] right-[23px]"">
+        <span class="arrows absolute arrRight  top-1/2  right-[23px]">
             <i class=" fa-solid fa-arrow-right arrow"></i>
         </span>
 
