@@ -48,7 +48,9 @@ deligate.addEventListener("click", (e) => {
 
 //Herobanner Image Slider
 const arrRight = document.querySelector(".arrRight");
+console.log(arrRight);
 const arrLeft = document.querySelector(".arrLeft");
+console.log(arrLeft);
 const heroImages = [
   "./images/eko1.jpg",
   "images/eko2.jpg",
@@ -71,6 +73,7 @@ setInterval(changeHeroBackgroundImage, 5000);
 
 //change from left to right or in accending order
 arrRight.addEventListener("click", () => {
+  console.log(arrRight);
   currentIndex = (currentIndex + 1) % heroImages.length;
   console.log(currentIndex);
   var heroElement = document.querySelector(".Hero");

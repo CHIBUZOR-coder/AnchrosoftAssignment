@@ -618,6 +618,26 @@ video {
   z-index: 40;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
+.-z-0 {
+  z-index: 0;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .m-1 {
   margin: 0.25rem;
 }
@@ -800,6 +820,11 @@ video {
 .bg-headerBtnText {
   --tw-bg-opacity: 1;
   background-color: rgb(205 162 116 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/images\/eko1\.jpg\'\)\] {
@@ -1113,6 +1138,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.25rem;
   padding: 0px;
   font-size: 9.5px;
 }
@@ -1136,7 +1162,7 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.line1 {
+.linee {
   cursor: pointer;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1146,7 +1172,7 @@ body {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-.line1:hover {
+.linee:hover {
   --tw-text-opacity: 1;
   color: rgb(205 162 116 / var(--tw-text-opacity));
 }
@@ -1181,6 +1207,7 @@ svg[data-active="true"] {
 }
 
 .arrows {
+  z-index: 10;
   cursor: pointer;
   font-size: 30px;
   --tw-text-opacity: 1;
