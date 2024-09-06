@@ -937,12 +937,12 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.pb-10 {
-  padding-bottom: 2.5rem;
-}
-
 .pb-5 {
   padding-bottom: 1.25rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .pt-2 {
@@ -955,10 +955,6 @@ video {
 
 .pt-\[70px\] {
   padding-top: 70px;
-}
-
-.pb-8 {
-  padding-bottom: 2rem;
 }
 
 .text-center {
@@ -980,6 +976,14 @@ video {
 
 .text-\[17px\] {
   font-size: 17px;
+}
+
+.text-\[42px\] {
+  font-size: 42px;
+}
+
+.text-\[32px\] {
+  font-size: 32px;
 }
 
 .font-semibold {
@@ -1366,7 +1370,6 @@ svg[data-active="true"] {
 
 .welcome {
   font-family: "Oswald", sans-serif;
-  font-size: 42px;
   font-weight: 700;
   line-height: 46.2px;
   text-transform: uppercase;
@@ -1397,6 +1400,10 @@ svg[data-active="true"] {
 
   .md\:gap-0 {
     gap: 0px;
+  }
+
+  .md\:text-\[42px\] {
+    font-size: 42px;
   }
 }
 
