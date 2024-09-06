@@ -65,6 +65,7 @@ function changeHeroBackgroundImage() {
   var heroElement = document.querySelector(".Hero");
   // heroElement.style.backgroundImage = "url(" + heroImages[currentIndex] + ")";
   heroElement.style.backgroundImage = `url(${heroImages[currentIndex]})`;
+  console.log(heroImages[currentIndex]);
 }
 //**********************************************************
 

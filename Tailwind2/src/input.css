@@ -12,6 +12,10 @@ body {
   animation-duration: 0.9s;
 }
 
+.boxx {
+  box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.4);
+}
+
 .bigheader {
   position: relative;
   z-index: 10;
@@ -24,6 +28,7 @@ body {
 .next {
   border: 0.5px solid black;
   border-radius: 4px;
+  z-index: 30;
 }
 
 /*** HOME***/
@@ -127,7 +132,23 @@ body {
 }
 
 .firstt {
-  @apply flex text-[9.5px] lg:text-head justify-center gap-1 items-center p-0 lg:p-2;
+  @apply flex text-[9.5px] lg:text-head justify-center gap-1 items-center p-0 lg:p-2 z-40;
+}
+
+.sticky {
+  z-index: 1;
+}
+
+.lin {
+  @apply p-2;
+}
+
+.lin {
+  transition: border-left-width 0.5s ease-in-out;
+}
+
+.lin:hover {
+  border-left: 5px solid rgb(205, 162, 116);
 }
 
 .first2 {
@@ -219,3 +240,11 @@ svg[data-active="true"] {
 .smallNav.expanded {
   max-height: 500px; 
 }  */
+.welcome {
+  font-family: "Oswald", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 46.2px;
+  text-transform: uppercase;
+  word-spacing: 0;
+}
