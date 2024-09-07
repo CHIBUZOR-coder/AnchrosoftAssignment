@@ -783,6 +783,10 @@ video {
   cursor: pointer;
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -860,6 +864,16 @@ video {
   background-color: rgb(4 48 64 / var(--tw-bg-opacity));
 }
 
+.bg-banner5 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-header {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -870,14 +884,24 @@ video {
   background-color: rgb(205 162 116 / var(--tw-bg-opacity));
 }
 
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.bg-slate-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
 .bg-slate-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
-.bg-banner5 {
+.bg-yellow-200 {
   --tw-bg-opacity: 1;
-  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
+  background-color: rgb(254 240 138 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/images\/childd1_imge\.jpg\'\)\] {
@@ -962,6 +986,11 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -990,16 +1019,6 @@ video {
 .py-\[50px\] {
   padding-top: 50px;
   padding-bottom: 50px;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .pb-0 {
@@ -1487,10 +1506,18 @@ svg[data-active="true"] {
   border: 1px solid black;
 }
 
-.worrd{
+.worrd {
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
+}
+
+.fchild {
+  height: 367px;
+}
+
+.frame {
+  padding: 1rem;
 }
 
 .hover\:bg-white:hover {

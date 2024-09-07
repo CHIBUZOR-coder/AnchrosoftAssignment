@@ -254,7 +254,6 @@ svg[data-active="true"] {
 }
 
 .about {
-
   letter-spacing: 6px;
   line-height: 27.2px;
   font-weight: 400;
@@ -265,7 +264,7 @@ svg[data-active="true"] {
 
 .most {
   font-family: "Oswald", sans-serif;
- 
+
   font-weight: 500;
 }
 
@@ -276,8 +275,17 @@ svg[data-active="true"] {
   border: 1px solid black;
 }
 
-.worrd{
+.worrd {
   font-size: 16px;
   line-height: 28px;
-   font-weight: 400;
+  font-weight: 400;
+}
+
+.fchild {
+  @apply   h-[367px];
+}
+
+
+.frame {
+  @apply  p-4;
 }
