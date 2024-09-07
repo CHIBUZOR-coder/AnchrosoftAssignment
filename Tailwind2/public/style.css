@@ -610,6 +610,10 @@ video {
   top: 2.5rem;
 }
 
+.top-4 {
+  top: 1rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -679,8 +683,24 @@ video {
   height: 2px;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
 .h-\[50vh\] {
   height: 50vh;
+}
+
+.h-\[624px\] {
+  height: 624px;
+}
+
+.min-h-\[540px\] {
+  min-height: 540px;
+}
+
+.min-h-\[624px\] {
+  min-height: 624px;
 }
 
 .w-1\/2 {
@@ -731,6 +751,10 @@ video {
   width: 40%;
 }
 
+.w-\[50\%\] {
+  width: 50%;
+}
+
 .w-\[50px\] {
   width: 50px;
 }
@@ -753,6 +777,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-start {
@@ -839,6 +867,10 @@ video {
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\/images\/childd1_imge\.jpg\'\)\] {
+  background-image: url('./images/childd1_imge.jpg');
+}
+
 .bg-\[url\(\'\.\/images\/eko1\.jpg\'\)\] {
   background-image: url('./images/eko1.jpg');
 }
@@ -853,6 +885,10 @@ video {
 
 .bg-center {
   background-position: center;
+}
+
+.p-12 {
+  padding: 3rem;
 }
 
 .p-2 {
@@ -918,6 +954,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .py-\[20px\] {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -937,12 +978,24 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
 
 .pb-8 {
   padding-bottom: 2rem;
+}
+
+.pl-\[15px\] {
+  padding-left: 15px;
+}
+
+.pr-\[91\.98px\] {
+  padding-right: 91.98px;
 }
 
 .pt-2 {
@@ -1374,6 +1427,41 @@ svg[data-active="true"] {
   line-height: 46.2px;
   text-transform: uppercase;
   word-spacing: 0;
+}
+
+.about {
+  font-size: 16px;
+  letter-spacing: 6px;
+  line-height: 27.2px;
+  font-weight: 400;
+  font-family: poppins, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.most {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.custom-shadow {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.learn_btn:hover {
+  border: 1px solid black;
+}
+
+.worrd{
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hover\:text-black:hover {

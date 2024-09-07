@@ -16,12 +16,9 @@ body {
   box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.4);
 }
 
-
 .boxx2 {
   box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.4);
 }
-
-
 
 .bigheader {
   position: relative;
@@ -249,9 +246,38 @@ svg[data-active="true"] {
 }  */
 .welcome {
   font-family: "Oswald", sans-serif;
- 
+
   font-weight: 700;
   line-height: 46.2px;
   text-transform: uppercase;
   word-spacing: 0;
+}
+
+.about {
+  font-size: 16px;
+  letter-spacing: 6px;
+  line-height: 27.2px;
+  font-weight: 400;
+  font-family: poppins, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.most {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.custom-shadow {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.learn_btn:hover {
+  border: 1px solid black;
+}
+
+.worrd{
+  font-size: 16px;
+  line-height: 28px;
+   font-weight: 400;
 }
