@@ -286,13 +286,16 @@ svg[data-active="true"] {
 }
 
 .frame {
-  @apply p-4;
+  @apply py-4;
 }
 
 .eko {
   @apply top-[85%];
 }
 
+.Eko {
+  @apply px-4;
+}
 /* Initial position for .eko */
 .eko {
   position: absolute;

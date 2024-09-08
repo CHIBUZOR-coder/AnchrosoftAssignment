@@ -1522,11 +1522,17 @@ svg[data-active="true"] {
 }
 
 .frame {
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .eko {
   top: 85%;
+}
+
+.Eko {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* Initial position for .eko */
