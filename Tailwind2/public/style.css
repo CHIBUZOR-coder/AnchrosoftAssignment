@@ -900,18 +900,6 @@ video {
   background-color: 	rgba(0, 0, 0, 0.2);
 }
 
-.bg-\[url\(\'\.\/images\/box1\.jpg\'\)\] {
-  background-image: url('./images/box1.jpg');
-}
-
-.bg-\[url\(\'\.\/images\/box2\.jpg\'\)\] {
-  background-image: url('./images/box2.jpg');
-}
-
-.bg-\[url\(\'\.\/images\/box3\.jpg\'\)\] {
-  background-image: url('./images/box3.jpg');
-}
-
 .bg-\[url\(\'\.\/images\/box4\.jpg\'\)\] {
   background-image: url('./images/box4.jpg');
 }
@@ -1545,19 +1533,22 @@ svg[data-active="true"] {
 
 .eko {
   position: absolute;
-  transition: top 0.5s ease-in-out;
+  font-size: 24px;
+  font-weight: 500;
+  transition: top 0.6s ease-in-out;
   /* Smooth transition for top property */
+  line-height: 26.4px;
 }
 
 /* On hover, move .eko up */
 
 .Eko:hover .eko {
-  top: 10%;
+  top: 7%;
   /* Target position when hovering */
 }
 
 .Eko:not(:hover) .eko {
-  transition-delay: 0.5s;
+  transition-delay: 0.6s;
   /* Delay before moving back to default position */
 }
 
@@ -1569,7 +1560,7 @@ svg[data-active="true"] {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   visibility: hidden;
-  transition: top 0.8s ease-in-out, opacity 1.5s ease-in-out, visibility 0s 1.5s;
+  transition: top 0.8s ease-in-out, opacity 1.5s ease-in-out, visibility 0s 1.6s;
   transition-delay: 0s;
 }
 
@@ -1585,21 +1576,100 @@ svg[data-active="true"] {
 
 .Alinks {
   position: absolute;
-  top: 60%;
+  top: 90%;
   visibility: hidden;
-  transition: top 0.9s ease-in-out, opacity 0.8s ease-in-out, visibility 0.8s;
+  transition: top 0.4s ease-in-out, opacity 1.5s ease-in-out, visibility 0s 1.5s;
+  transition-delay: 0s;
+  display: flex;
+  justify-content: center;
+  gap: 1.75rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .alinks i {
   font-size: 0.8em;
-  /* Adjust this value to change the size of the icons */
+}
+
+.alinkss i {
+  font-size: 3rem;
 }
 
 .Eko:hover .Alinks {
-  top: 50%;
+  top: 55%;
   opacity: 1;
   visibility: visible;
-  transition: top 0.3s ease-in-out, opacity 0.5s ease-in-out;
+  transition: top 0.3s ease-in-out, opacity 0.2s ease-in-out, visibility 0s 0.7s;
+}
+
+.alinks {
+  width: 128px;
+  /* background-color: blue; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.alinks:hover {
+  width: 140px;
+  /* visibility: hidden; */
+  transition: width 0.3s ease-in-out;
+}
+
+.clr {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.clrr {
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  transform: translateY(-50%);
+}
+
+.alinks:hover .clr {
+  visibility: hidden;
+  left: 20%;
+  transition: left 0.3s, visibility 0.2s ease-in-out;
+}
+
+.alinks:hover .clrr {
+  visibility: hidden;
+  left: 40%;
+  transition: left 0.3s, visibility 0.2s ease-in-out;
+}
+
+/* 
+.alinkss {
+  width: 128px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.alinkss:hover {
+  width: 170px;
+
+  transition: width 0.3s ease-in-out;
+} */
+
+.house {
+  position: relative;
+  width: 30%;
+  /* background-color: brown; */
+  left: -13%;
+}
+
+.texttt {
+  position: relative;
+  width: 70%;
+  font-size: 13px;
+  line-height: 22.1px;
+  text-transform: uppercase;
+  /* background-color: chartreuse; */
 }
 
 .hover\:bg-transxl:hover {
