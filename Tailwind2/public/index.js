@@ -151,3 +151,17 @@ toggler.addEventListener("click", () => {
 // toggler.addEventListener("click", () => {
 //   smallNav.classList.toggle("expanded");
 // });
+
+// //EKO
+// const Eko = document.querySelectorAll(".Eko");
+// console.log(Eko);
+// const eko = document.querySelectorAll(".eko");
+// console.log(eko);
+
+// for (j = 0; j < Eko.length; j++) {
+//   Eko[j].addEventListener("mouseover", () => {
+//     for (i = 0; i < eko.length; i++) {
+//       eko[i].style.top = "1rem";
+//     }
+//   });
+// }

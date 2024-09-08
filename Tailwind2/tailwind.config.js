@@ -6,7 +6,8 @@ module.exports = {
       colors: {
         header: "rgb(255,255,255)",
         headerBtnText: "rgb(205,162,116)",
-        trans: "	rgba(30, 26, 26, 0.6)",
+        trans: "	rgba(0, 0, 0, 0.2)",
+        transxl:"rgba(0, 0, 0, 0.7)",
         trans2: "rgba(255, 255, 255, 0.5)",
         banner3: "rgb(4,48,64)",
         banner3Text2: "rgb(85,85,85)",

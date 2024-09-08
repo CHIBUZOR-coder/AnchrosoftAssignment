@@ -282,10 +282,66 @@ svg[data-active="true"] {
 }
 
 .fchild {
-  @apply   h-[367px];
+  @apply h-[367px];
 }
 
-
 .frame {
-  @apply  p-4;
+  @apply p-4;
+}
+
+.eko {
+  @apply top-[85%];
+}
+
+/* Initial position for .eko */
+.eko {
+  position: absolute;
+
+  transition: top 0.5s ease-in-out; /* Smooth transition for top property */
+}
+
+/* On hover, move .eko up */
+.Eko:hover .eko {
+  top: 10%; /* Target position when hovering */
+}
+
+.Eko:not(:hover) .eko {
+  transition-delay: 0.5s; /* Delay before moving back to default position */
+}
+
+.ekoo {
+  @apply absolute top-[30%] text-white px-2;
+}
+
+.ekoo {
+  visibility: hidden;
+  transition: top 0.8s ease-in-out, opacity 1.5s ease-in-out, visibility 0s 1.5s;
+  transition-delay: 0s;
+}
+
+.Eko:hover .ekoo {
+  top: 25%;
+  opacity: 1;
+  visibility: visible;
+  top: 25%;
+  transition: top 0.3s ease-in-out, opacity 1.5s ease-in-out, visibility 0s 1.5s;
+  transition-delay: 0.5s;
+}
+/* *** */
+.Alinks {
+  position: absolute;
+  top: 60%;
+  visibility: hidden;
+  transition: top 0.9s ease-in-out, opacity 0.8s ease-in-out, visibility 0.8s;
+}
+
+.alinks i {
+  font-size: 0.8em; /* Adjust this value to change the size of the icons */
+}
+
+.Eko:hover .Alinks {
+  top: 50%;
+  opacity: 1;
+  visibility: visible;
+  transition: top 0.3s ease-in-out, opacity 0.5s ease-in-out;
 }
