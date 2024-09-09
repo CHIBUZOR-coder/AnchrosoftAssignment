@@ -280,17 +280,13 @@ svg[data-active="true"] {
   line-height: 28px;
   font-weight: 400;
 }
-
+/* 
 .fchild {
   @apply h-[367px];
-}
-
-.frame {
-  @apply py-4;
-}
+} */
 
 .eko {
-  @apply top-[85%];
+  @apply top-[80%];
 }
 
 .Eko {
@@ -303,6 +299,7 @@ svg[data-active="true"] {
   font-weight: 500;
   transition: top 0.6s ease-in-out; /* Smooth transition for top property */
   line-height: 26.4px;
+  width: 95%;
 }
 
 /* On hover, move .eko up */
@@ -315,13 +312,15 @@ svg[data-active="true"] {
 }
 
 .ekoo {
-  @apply absolute top-[30%] text-white px-2;
+  @apply absolute top-[30%] text-white px-2 text-[16px];
 }
 
 .ekoo {
   visibility: hidden;
   transition: top 0.8s ease-in-out, opacity 1.5s ease-in-out, visibility 0s 1.6s;
   transition-delay: 0s;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 .Eko:hover .ekoo {
@@ -423,4 +422,28 @@ svg[data-active="true"] {
   line-height: 22.1px;
   text-transform: uppercase;
   /* background-color: chartreuse; */
+}
+
+.alll {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  line-height: 20px;
+}
+.alll:hover {
+  border: 1px solid black;
+}
+
+.slide {
+  @apply pl-7 pr-3 py-4 flex-shrink-0 w-1/2;
+}
+.things {
+  @apply bg-header  min-h-[210px] py-2;
+}
+.this {
+  @apply w-[303px]  h-[202px] flex flex-col gap-7 items-start;
+}
+
+.thisch {
+  @apply w-[202px] h-[202px] relative -left-8;
 }

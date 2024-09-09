@@ -70,7 +70,7 @@ function changeHeroBackgroundImage() {
 //**********************************************************
 
 // Change hero background image every 5 seconds (adjust the interval as needed)
-setInterval(changeHeroBackgroundImage, 5000);
+setInterval(changeHeroBackgroundImage, 7000);
 
 //change from left to right or in accending order
 arrRight.addEventListener("click", () => {
@@ -128,7 +128,6 @@ function makeTextEditable(element) {
 
 // Initialize the editable text
 makeTextEditable(document.getElementById("arrivalText"));
-//************************************************************ */
 
 //Header Toggle for Small
 const smallNav = document.querySelector(".smallNav");
@@ -165,3 +164,31 @@ toggler.addEventListener("click", () => {
 //     }
 //   });
 // }
+//************************************************************ */
+
+const dots = document.querySelectorAll(".dot");
+const slides = document.querySelector(".slides");
+
+// Function to update the active dot based on index
+function updateActiveDot(index) {
+  // Remove active class from all dots
+  dots.forEach((dot) => dot.classList.remove("bg-gray-700"));
+
+  // Add active class to the clicked/current dot
+  dots[index].classList.add("bg-gray-700");
+}
+
+// Set the first dot as active when the page loads
+updateActiveDot(0);
+
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    // Move the slides by 100% for each set of 2 slides per view
+    const offset = -index * 100; // Shift by 100% for each set
+    console.log(offset);
+    slides.style.transform = `translateX(${offset}%)`;
+
+    // Update active dot
+    updateActiveDot(index);
+  });
+});
