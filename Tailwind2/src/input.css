@@ -447,3 +447,10 @@ svg[data-active="true"] {
 .thisch {
   @apply w-[202px] h-[202px] relative -left-8;
 }
+
+.sli {
+  font-size: 24px;
+  line-height: 27.2px;
+  font-weight: 700;
+  font-family: Oswald, sans-serif;
+}

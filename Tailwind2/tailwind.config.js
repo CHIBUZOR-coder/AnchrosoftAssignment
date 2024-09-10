@@ -14,6 +14,7 @@ module.exports = {
         darkText: "rgb(4,48,64)",
         banner5: "rgb(248,248,248)",
         banner6: "rgb(24,28,35)",
+        dot: "rgb(134,151,145)",
       },
       boxShadow: {
         thick: "rgba(0, 0, 0, 1)",

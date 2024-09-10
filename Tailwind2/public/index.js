@@ -172,10 +172,10 @@ const slides = document.querySelector(".slides");
 // Function to update the active dot based on index
 function updateActiveDot(index) {
   // Remove active class from all dots
-  dots.forEach((dot) => dot.classList.remove("bg-gray-700"));
+  dots.forEach((dot) => (dot.style.backgroundColor = "white"));
 
   // Add active class to the clicked/current dot
-  dots[index].classList.add("bg-gray-700");
+  dots[index].style.backgroundColor = "rgb(134,151,145)";
 }
 
 // Set the first dot as active when the page loads
@@ -183,8 +183,16 @@ updateActiveDot(0);
 
 dots.forEach((dot, index) => {
   dot.addEventListener("click", () => {
-    // Move the slides by 100% for each set of 2 slides per view
-    const offset = -index * 100; // Shift by 100% for each set
+    let offset;
+
+    // If it's the last dot (index 2), shift to the last two slides
+    if (index === 2) {
+      offset = -151; // Move to show slides 4 and 5
+    } else {
+      // Move the slides by 100% for each set of 2 slides per view
+      offset = -index * 100;
+    }
+
     console.log(offset);
     slides.style.transform = `translateX(${offset}%)`;
 
