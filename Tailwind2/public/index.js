@@ -70,7 +70,7 @@ function changeHeroBackgroundImage() {
 //**********************************************************
 
 // Change hero background image every 5 seconds (adjust the interval as needed)
-setInterval(changeHeroBackgroundImage, 7000);
+setInterval(changeHeroBackgroundImage, 6000);
 
 //change from left to right or in accending order
 arrRight.addEventListener("click", () => {
@@ -143,60 +143,83 @@ toggler.addEventListener("click", () => {
   }
 });
 
-// // Header Toggle for Small
-// const smallNav = document.querySelector(".smallNav");
-// const toggler = document.querySelector(".toggler");
 
-// toggler.addEventListener("click", () => {
-//   smallNav.classList.toggle("expanded");
-// });
 
-// //EKO
-// const Eko = document.querySelectorAll(".Eko");
-// console.log(Eko);
-// const eko = document.querySelectorAll(".eko");
-// console.log(eko);
-
-// for (j = 0; j < Eko.length; j++) {
-//   Eko[j].addEventListener("mouseover", () => {
-//     for (i = 0; i < eko.length; i++) {
-//       eko[i].style.top = "1rem";
-//     }
-//   });
-// }
-//************************************************************ */
-
-const dots = document.querySelectorAll(".dot");
 const slides = document.querySelector(".slides");
+const dotParent = document.querySelector(".dotParent");
 
 // Function to update the active dot based on index
 function updateActiveDot(index) {
-  // Remove active class from all dots
-  dots.forEach((dot) => (dot.style.backgroundColor = "white"));
-
-  // Add active class to the clicked/current dot
-  dots[index].style.backgroundColor = "rgb(134,151,145)";
+  const dots = document.querySelectorAll(".dot"); // Re-select dots
+  dots.forEach((dot) => (dot.style.backgroundColor = "white")); // Ensure dots exist
+  if (dots[index]) {
+    dots[index].style.backgroundColor = "rgb(134,151,145)"; // Update the active dot
+  }
 }
 
 // Set the first dot as active when the page loads
 updateActiveDot(0);
 
-dots.forEach((dot, index) => {
-  dot.addEventListener("click", () => {
-    let offset;
-
-    // If it's the last dot (index 2), shift to the last two slides
-    if (index === 2) {
-      offset = -151; // Move to show slides 4 and 5
-    } else {
-      // Move the slides by 100% for each set of 2 slides per view
-      offset = -index * 100;
+function handleResize() {
+  if (window.innerWidth <= 768) {
+    console.log("Small screen: 1 slide per view");
+    
+    // Add two more dots if not already added (for 5 dots)
+    if (dotParent.children.length < 5) {
+      for (let i = 3; i <= 4; i++) {
+        const newDot = document.createElement("button");
+        newDot.classList.add("dot", "w-[10px]", "h-[10px]", "bg-gray-300", "rounded-full");
+        newDot.dataset.slide = i; // Set the index
+        dotParent.appendChild(newDot);
+      }
     }
 
-    console.log(offset);
-    slides.style.transform = `translateX(${offset}%)`;
+    const smallDots = document.querySelectorAll(".dot");
+    
+    smallDots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        let offset = -index * 100; // Move 100% for each slide
+        slides.style.transform = `translateX(${offset}%)`;
+        updateActiveDot(index); // Call updateActiveDot with current index
+      });
+    });
+  } else {
+    console.log("Large screen: 2 slides per view");
 
-    // Update active dot
-    updateActiveDot(index);
-  });
-});
+    // Remove extra dots if present (ensure 3 dots only)
+    while (dotParent.children.length > 3) {
+      dotParent.removeChild(dotParent.lastChild);
+    }
+
+    const largeDots = document.querySelectorAll(".dot");
+
+    largeDots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        let offset;
+        if (index === 2) {
+          offset = -151; // Move to the last two slides
+        } else {
+          offset = -index * 100; // Move by 100% for two slides per view
+        }
+        slides.style.transform = `translateX(${offset}%)`;
+        updateActiveDot(index); // Call updateActiveDot with current index
+      });
+    });
+  }
+}
+
+// Listen to window resize and execute the function initially
+window.addEventListener("resize", handleResize);
+handleResize(); // Run on load to ensure correct behavior
+
+
+
+
+
+
+
+
+
+
+
+

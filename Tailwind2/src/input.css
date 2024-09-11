@@ -435,17 +435,21 @@ svg[data-active="true"] {
 }
 
 .slide {
-  @apply pl-7 pr-3 py-4 flex-shrink-0 w-1/2;
+  @apply pl-0 md:pl-7 pr-0 md:pr-3 py-4 flex-shrink-0  md:w-1/2 overflow-hidden w-full;
 }
 .things {
-  @apply bg-header  min-h-[210px] py-2;
+  @apply bg-header  min-h-[210px] py-0 md:py-2 w-full;
 }
 .this {
-  @apply w-[303px]  h-[202px] flex flex-col gap-7 items-start;
+  @apply w-full md:w-[303px] h-[200px]   md:h-[202px] flex flex-col gap-7 items-start;
+}
+
+.tripleH {
+  @apply flex-col md:flex-row p-3 md:px-0 gap-10 md:gap-0;
 }
 
 .thisch {
-  @apply w-[202px] h-[202px] relative -left-8;
+  @apply w-full md:w-[202px] h-[300px]  md:h-[202px] relative left-auto md:-left-8;
 }
 
 .sli {
