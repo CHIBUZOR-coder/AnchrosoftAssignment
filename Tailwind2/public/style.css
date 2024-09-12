@@ -604,6 +604,14 @@ video {
   position: sticky;
 }
 
+.-left-11 {
+  left: -2.75rem;
+}
+
+.-left-4 {
+  left: -1rem;
+}
+
 .-top-44 {
   top: -11rem;
 }
@@ -680,6 +688,10 @@ video {
   margin: 0.25rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -753,12 +765,20 @@ video {
   height: 45px;
 }
 
+.h-\[479px\] {
+  height: 479px;
+}
+
 .h-\[482px\] {
   height: 482px;
 }
 
 .h-\[50vh\] {
   height: 50vh;
+}
+
+.h-\[510px\] {
+  height: 510px;
 }
 
 .h-\[624px\] {
@@ -817,6 +837,14 @@ video {
   width: 200px;
 }
 
+.w-\[210px\] {
+  width: 210px;
+}
+
+.w-\[24\%\] {
+  width: 24%;
+}
+
 .w-\[250px\] {
   width: 250px;
 }
@@ -851,6 +879,11 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.-rotate-90 {
+  --tw-rotate: -90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .transform {
@@ -899,6 +932,10 @@ video {
 
 .justify-around {
   justify-content: space-around;
+}
+
+.justify-items-stretch {
+  justify-items: stretch;
 }
 
 .gap-0 {
@@ -978,6 +1015,11 @@ video {
   background-color: rgb(24 28 35 / var(--tw-bg-opacity));
 }
 
+.bg-banner7 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
+}
+
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
@@ -1002,6 +1044,15 @@ video {
   background-color: 	rgba(0, 0, 0, 0.2);
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\.\/images\/88-restaurant\.jpg\'\)\] {
+  background-image: url('./images/88-restaurant.jpg');
+}
+
 .bg-\[url\(\'\.\/images\/box4\.jpg\'\)\] {
   background-image: url('./images/box4.jpg');
 }
@@ -1018,12 +1069,20 @@ video {
   background-image: url('./images/gym.jpg');
 }
 
+.bg-\[url\(\'\.\/images\/lagoon-breeze\.jpg\'\)\] {
+  background-image: url('./images/lagoon-breeze.jpg');
+}
+
 .bg-\[url\(\'\.\/images\/logo-imgg\.jpg\'\)\] {
   background-image: url('./images/logo-imgg.jpg');
 }
 
 .bg-\[url\(\'\.\/images\/saloon\.jpg\'\)\] {
   background-image: url('./images/saloon.jpg');
+}
+
+.bg-\[url\(\'\.\/images\/sky-restaurant\.jpg\'\)\] {
+  background-image: url('./images/sky-restaurant.jpg');
 }
 
 .bg-\[url\(\'\.\/images\/spa\.jpg\'\)\] {
@@ -1061,6 +1120,11 @@ video {
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .px-10 {
@@ -1153,9 +1217,9 @@ video {
   padding-bottom: 2px;
 }
 
-.py-\[50px\] {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.py-\[55px\] {
+  padding-top: 55px;
+  padding-bottom: 55px;
 }
 
 .py-\[70px\] {
@@ -1240,6 +1304,10 @@ video {
   font-size: 21px;
 }
 
+.text-\[25px\] {
+  font-size: 25px;
+}
+
 .text-\[32px\] {
   font-size: 32px;
 }
@@ -1250,6 +1318,15 @@ video {
 
 .font-thin {
   font-weight: 100;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-darkText {
@@ -1585,6 +1662,17 @@ svg[data-active="true"] {
   font-size: 25px;
   --tw-text-opacity: 1;
   color: rgb(85 85 85 / var(--tw-text-opacity));
+}
+
+.pikk {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  letter-spacing: 1px;
+  line-height: 37px;
+  font-family: "Playfair Display", serif;
+}
+
+.pikin2 {
   letter-spacing: 1px;
   line-height: 37px;
   font-family: "Playfair Display", serif;
@@ -1861,6 +1949,8 @@ svg[data-active="true"] {
 @media (min-width: 768px) {
   .slide {
     width: 50%;
+    padding-top: 0px;
+    padding-bottom: 0px;
     padding-left: 1.75rem;
     padding-right: 0.75rem;
   }
@@ -1935,6 +2025,69 @@ svg[data-active="true"] {
   font-family: Oswald, sans-serif;
 }
 
+.Aflextchild {
+  height: 400px;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px) {
+  .Aflextchild {
+    width: 24%;
+  }
+}
+
+.Aflextchi:hover {
+  transition: ease-in-out 0.3s;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.sky {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.skyA {
+  margin-top: 1rem;
+}
+
+.mge {
+  height: 174.65px;
+  width: 100%;
+}
+
+.got {
+  width: 50%;
+}
+
+.pla {
+  display: none;
+  height: 2px;
+  width: 105px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bigText {
+  font-size: 98px;
+  line-height: 166px;
+  font-weight: 700;
+}
+
+.skychlda {
+  font-size: 16px;
+  width: 70%;
+  line-height: 27.2px;
+}
+
+.skychldd {
+  font-family: Oswald, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+
 .hover\:bg-transxl:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -1956,6 +2109,10 @@ svg[data-active="true"] {
 
   .md\:top-0 {
     top: 0px;
+  }
+
+  .md\:mt-8 {
+    margin-top: 2rem;
   }
 
   .md\:block {
@@ -1980,6 +2137,10 @@ svg[data-active="true"] {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-\[24\%\] {
+    width: 24%;
   }
 
   .md\:grid-cols-2 {
@@ -2016,14 +2177,34 @@ svg[data-active="true"] {
     padding-right: 2.5rem;
   }
 
+  .md\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
   .md\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
 
+  .md\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .md\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
   .md\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .md\:py-9 {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
   }
 
   .md\:pb-14 {

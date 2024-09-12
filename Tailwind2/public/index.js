@@ -125,9 +125,59 @@ function makeTextEditable(element) {
     });
   });
 }
-
 // Initialize the editable text
 makeTextEditable(document.getElementById("arrivalText"));
+
+// /////
+//Arrival toggler
+const arriveV = document.querySelectorAll(".arriveV ");
+console.log(`Afirst ${arriveV[0]}`);
+console.log(`Asecond ${arriveV[1]}`);
+const togglee = document.querySelectorAll(".togglee");
+console.log(`first ${togglee[0]}`);
+console.log(`second ${togglee[1]}`);
+
+let currentValue;
+for (let i = 0; i < togglee.length; i++) {
+  togglee[i].addEventListener("click", () => {
+    // currentValue = togglee[i];
+    if (arriveV[i].classList.contains("hidden")) {
+      arriveV[i].classList.remove("hidden");
+    } else {
+      arriveV[i].classList.add("hidden");
+    }
+    if (i === 0 && !arriveV[0].classList.contains("hidden")) {
+      arriveV[1].classList.add("hidden"); // Hide the second if the first is visible
+    } else if (i === 1 && !arriveV[1].classList.contains("hidden")) {
+      arriveV[0].classList.add("hidden"); // Hide the first if the second is visible
+    }
+  });
+}
+
+
+
+// // Arrival toggler
+// const arriveV = document.querySelectorAll(".arriveV");
+// const togglee = document.querySelectorAll(".togglee");
+
+// for (let i = 0; i < togglee.length; i++) {
+//   togglee[i].addEventListener("click", () => {
+//     // First, hide all .arriveV elements
+//     arriveV.forEach((el, index) => {
+//       if (index !== i) {
+//         el.classList.add("hidden"); // Hide all other .arriveV elements
+//       }
+//     });
+
+//     // Toggle the visibility of the clicked .arriveV element
+//     arriveV[i].classList.toggle("hidden");
+//   });
+// }
+
+
+
+
+// ***************************************************
 
 //Header Toggle for Small
 const smallNav = document.querySelector(".smallNav");
@@ -142,8 +192,7 @@ toggler.addEventListener("click", () => {
     smallNav.classList.remove("expanded");
   }
 });
-
-
+// ***************************************
 
 const slides = document.querySelector(".slides");
 const dotParent = document.querySelector(".dotParent");
@@ -163,19 +212,25 @@ updateActiveDot(0);
 function handleResize() {
   if (window.innerWidth <= 768) {
     console.log("Small screen: 1 slide per view");
-    
+
     // Add two more dots if not already added (for 5 dots)
     if (dotParent.children.length < 5) {
       for (let i = 3; i <= 4; i++) {
         const newDot = document.createElement("button");
-        newDot.classList.add("dot", "w-[10px]", "h-[10px]", "bg-gray-300", "rounded-full");
+        newDot.classList.add(
+          "dot",
+          "w-[10px]",
+          "h-[10px]",
+          "bg-gray-300",
+          "rounded-full"
+        );
         newDot.dataset.slide = i; // Set the index
         dotParent.appendChild(newDot);
       }
     }
 
     const smallDots = document.querySelectorAll(".dot");
-    
+
     smallDots.forEach((dot, index) => {
       dot.addEventListener("click", () => {
         let offset = -index * 100; // Move 100% for each slide
@@ -212,14 +267,18 @@ function handleResize() {
 window.addEventListener("resize", handleResize);
 handleResize(); // Run on load to ensure correct behavior
 
+//small hover
+const ana = document.querySelectorAll(".ana");
+console.log(ana);
+const pla = document.querySelectorAll(".pla");
+console.log(pla);
 
+for (let i = 0; i < pla.length; i++) {
+  ana[i].addEventListener("mouseover", () => {
+    pla[i].style.display = "block";
+  });
 
-
-
-
-
-
-
-
-
-
+  ana[i].addEventListener("mouseout", () => {
+    pla[i].style.display = "none";
+  });
+}

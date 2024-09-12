@@ -193,6 +193,15 @@ svg[data-active="true"] {
 .pikin2 {
   @apply text-banner3Text2 text-[25px];
 }
+.pikk {
+  @apply  text-white;
+}
+
+.pikk {
+  letter-spacing: 1px;
+  line-height: 37px;
+  font-family: "Playfair Display", serif;
+}
 .pikin2 {
   letter-spacing: 1px;
   line-height: 37px;
@@ -435,7 +444,7 @@ svg[data-active="true"] {
 }
 
 .slide {
-  @apply pl-0 md:pl-7 pr-0 md:pr-3 py-4 flex-shrink-0  md:w-1/2 overflow-hidden w-full;
+  @apply pl-0 md:pl-7 pr-0 md:pr-3 py-4 md:py-0 flex-shrink-0  md:w-1/2 overflow-hidden w-full;
 }
 .things {
   @apply bg-header  min-h-[210px] py-0 md:py-2 w-full;
@@ -457,4 +466,47 @@ svg[data-active="true"] {
   line-height: 27.2px;
   font-weight: 700;
   font-family: Oswald, sans-serif;
+}
+
+.Aflextchild {
+  @apply w-full md:w-[24%]  h-[400px] bg-white;
+}
+.Aflextchi:hover {
+  transition: ease-in-out 0.3s;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+.sky {
+  @apply px-4;
+}
+.skyA {
+  @apply mt-4;
+}
+.mge {
+  @apply w-full h-[174.65px];
+}
+
+.got {
+  @apply w-[50%];
+}
+.pla {
+  @apply h-[2px] w-[105px] bg-black hidden;
+}
+
+.bigText {
+  font-size: 98px;
+  line-height: 166px;
+  font-weight: 700;
+}
+
+.skychlda {
+  font-size: 16px;
+  width: 70%;
+  line-height: 27.2px;
+}
+
+.skychldd {
+  font-family: Oswald, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26.4px;
 }
