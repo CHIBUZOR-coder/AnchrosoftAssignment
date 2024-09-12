@@ -194,7 +194,7 @@ svg[data-active="true"] {
   @apply text-banner3Text2 text-[25px];
 }
 .pikk {
-  @apply  text-white;
+  @apply text-white;
 }
 
 .pikk {
@@ -289,22 +289,23 @@ svg[data-active="true"] {
   line-height: 28px;
   font-weight: 400;
 }
-/* 
+
 .fchild {
-  @apply h-[367px];
-} */
+  @apply h-[300px]   md:h-[367.469px];
+}
 
 .eko {
   @apply top-[80%];
 }
 
 .Eko {
-  @apply px-4;
+  @apply px-0 md:px-4;
 }
 /* Initial position for .eko */
 .eko {
   position: absolute;
   font-size: 24px;
+   font-family: Oswald, sans-serif;
   font-weight: 500;
   transition: top 0.6s ease-in-out; /* Smooth transition for top property */
   line-height: 26.4px;
@@ -332,6 +333,11 @@ svg[data-active="true"] {
   font-weight: 400;
 }
 
+
+
+.horizon {
+  @apply mt-2;
+}
 .Eko:hover .ekoo {
   top: 25%;
   opacity: 1;
@@ -361,7 +367,7 @@ svg[data-active="true"] {
 }
 
 .Eko:hover .Alinks {
-  top: 55%;
+  top: 70%;
   opacity: 1;
   visibility: visible;
   transition: top 0.3s ease-in-out, opacity 0.2s ease-in-out, visibility 0s 0.7s;

@@ -757,10 +757,6 @@ video {
   height: 2px;
 }
 
-.h-\[367\.469px\] {
-  height: 367.469px;
-}
-
 .h-\[45px\] {
   height: 45px;
 }
@@ -1764,18 +1760,30 @@ svg[data-active="true"] {
   font-weight: 400;
 }
 
-/* 
 .fchild {
-  @apply h-[367px];
-} */
+  height: 300px;
+}
+
+@media (min-width: 768px) {
+  .fchild {
+    height: 367.469px;
+  }
+}
 
 .eko {
   top: 80%;
 }
 
 .Eko {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@media (min-width: 768px) {
+  .Eko {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 /* Initial position for .eko */
@@ -1783,6 +1791,7 @@ svg[data-active="true"] {
 .eko {
   position: absolute;
   font-size: 24px;
+  font-family: Oswald, sans-serif;
   font-weight: 500;
   transition: top 0.6s ease-in-out;
   /* Smooth transition for top property */
@@ -1817,6 +1826,10 @@ svg[data-active="true"] {
   font-weight: 400;
 }
 
+.horizon {
+  margin-top: 0.5rem;
+}
+
 .Eko:hover .ekoo {
   opacity: 1;
   visibility: visible;
@@ -1849,7 +1862,7 @@ svg[data-active="true"] {
 }
 
 .Eko:hover .Alinks {
-  top: 55%;
+  top: 70%;
   opacity: 1;
   visibility: visible;
   transition: top 0.3s ease-in-out, opacity 0.2s ease-in-out, visibility 0s 0.7s;
@@ -2127,6 +2140,10 @@ svg[data-active="true"] {
     height: 100vh;
   }
 
+  .md\:w-\[24\%\] {
+    width: 24%;
+  }
+
   .md\:w-\[47\%\] {
     width: 47%;
   }
@@ -2137,10 +2154,6 @@ svg[data-active="true"] {
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:w-\[24\%\] {
-    width: 24%;
   }
 
   .md\:grid-cols-2 {
