@@ -1093,6 +1093,54 @@ video {
   background-image: url('./images/tennis-court.jpg');
 }
 
+.bg-\[url\(\.\/images\/gallery_img1\.jpg\)\] {
+  background-image: url(./images/gallery_img1.jpg);
+}
+
+.bg-\[url\(\.\/images\/gallery_img10\.jpg\)\] {
+  background-image: url(./images/gallery_img10.jpg);
+}
+
+.bg-\[url\(\.\/images\/gallery_img11\.jpg\)\] {
+  background-image: url(./images/gallery_img11.jpg);
+}
+
+.bg-\[url\(\.\/images\/gallery_img12\.jpg\)\] {
+  background-image: url(./images/gallery_img12.jpg);
+}
+
+.bg-\[url\(\.\/images\/gallery_img2\.jpg\)\] {
+  background-image: url(./images/gallery_img2.jpg);
+}
+
+.bg-\[url\(\.\/images\/gallery_img3\.jpg\)\] {
+  background-image: url(./images/gallery_img3.jpg);
+}
+
+.bg-\[url\(\.\/images\/gallery_img4\.jpg\)\] {
+  background-image: url(./images/gallery_img4.jpg);
+}
+
+.bg-\[url\(\.\/images\/gallery_img5\.jpg\)\] {
+  background-image: url(./images/gallery_img5.jpg);
+}
+
+.bg-\[url\(\.\/images\/gallery_img6\.jpg\)\] {
+  background-image: url(./images/gallery_img6.jpg);
+}
+
+.bg-\[url\(\.\/images\/gallery_img7\.jpg\)\] {
+  background-image: url(./images/gallery_img7.jpg);
+}
+
+.bg-\[url\(\.\/images\/gallery_img8\.jpg\)\] {
+  background-image: url(./images/gallery_img8.jpg);
+}
+
+.bg-\[url\(\.\/images\/gallery_img9\.jpg\)\] {
+  background-image: url(./images/gallery_img9.jpg);
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -2101,6 +2149,34 @@ svg[data-active="true"] {
   line-height: 26.4px;
 }
 
+.slideA {
+  height: 200.3px;
+  width: 25%;
+  flex-shrink: 0;
+}
+
+.slideB {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: 	rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-duration: 700ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slideB:hover {
+  background-color: rgba(25, 32, 37, 0.6);
+}
+
 .hover\:bg-transxl:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -2255,3 +2331,6 @@ svg[data-active="true"] {
     padding-right: 3rem;
   }
 }
+
+
+

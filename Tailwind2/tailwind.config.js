@@ -16,6 +16,10 @@ module.exports = {
         banner6: "rgb(24,28,35)",
         dot: "rgb(134,151,145)",
         banner7: "rgb(248,248,248)",
+        darkText: "rgb(4,48,64)",
+        Gallery: "rgba(25, 32, 37, 0.6)",
+        gal: "rgba(0, 0, 255, 0.5)",
+        transs: "	rgba(0, 0, 0, 0.3)",
       },
       boxShadow: {
         thick: "rgba(0, 0, 0, 1)",
