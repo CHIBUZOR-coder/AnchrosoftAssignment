@@ -519,11 +519,15 @@ svg[data-active="true"] {
   @apply w-[25%] h-[200.3px] shrink-0;
 }
 
-
-
 .slideB {
   @apply w-full h-full flex justify-center items-center text-white text-2xl bg-transs hover:bg-Gallery transition ease-in-out duration-700;
 }
 
+.bman {
+  border: 5px solid rgb(204, 204, 204);
+  border-radius: 5px;
+}
 
-
+.nexttt {
+  @apply rounded-sm p-[5px] bg-NaDot hover:bg-NaDot2 transition ease-in-out duration-700 cursor-pointer;
+}

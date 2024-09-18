@@ -20,6 +20,13 @@ module.exports = {
         Gallery: "rgba(25, 32, 37, 0.6)",
         gal: "rgba(0, 0, 255, 0.5)",
         transs: "	rgba(0, 0, 0, 0.3)",
+        transxlS: "rgba(0, 0, 0, 0.7)",
+        caption: "rgb(204,204,204)",
+        bla: "rgb(153,153,153)",
+        NaDot: "rgba(214,214,214,0.6)",
+        NaDot2: "rgba(214,214,214,1)",
+        nextDot1: "rgb(234,234,234,1)",
+        nextDot2: "rgb(234,234,234,1)",
       },
       boxShadow: {
         thick: "rgba(0, 0, 0, 1)",

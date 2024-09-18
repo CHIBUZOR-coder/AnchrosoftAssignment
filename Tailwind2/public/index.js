@@ -154,8 +154,6 @@ for (let i = 0; i < togglee.length; i++) {
   });
 }
 
-
-
 // // Arrival toggler
 // const arriveV = document.querySelectorAll(".arriveV");
 // const togglee = document.querySelectorAll(".togglee");
@@ -173,9 +171,6 @@ for (let i = 0; i < togglee.length; i++) {
 //     arriveV[i].classList.toggle("hidden");
 //   });
 // }
-
-
-
 
 // ***************************************************
 
@@ -267,7 +262,7 @@ function handleResize() {
 window.addEventListener("resize", handleResize);
 handleResize(); // Run on load to ensure correct behavior
 
-//small hover
+//small hover border
 const ana = document.querySelectorAll(".ana");
 console.log(ana);
 const pla = document.querySelectorAll(".pla");
@@ -283,35 +278,3 @@ for (let i = 0; i < pla.length; i++) {
   });
 }
 
-
-
-
-//GALLERY
-
-function updateActiveDot2(index) {
-  const dots = document.querySelectorAll(".dot"); // Re-select dots
-  dots.forEach((dot) => (dot.style.backgroundColor = "white")); // Ensure dots exist
-  if (dots[index]) {
-    dots[index].style.backgroundColor = "rgb(134,151,145)"; // Update the active dot
-  }
-}
-
-function handleResize() {
-
-      dot.addEventListener("click", () => {
-        let offset;
-        if (index === 2) {
-          offset = -151; // Move to the last two slides
-        } else {
-          offset = -index * 100; // Move by 100% for two slides per view
-        }
-        slides.style.transform = `translateX(${offset}%)`;
-        updateActiveDot(index); // Call updateActiveDot with current index
-      });
- 
-  }
-
-
-// Listen to window resize and execute the function initially
-window.addEventListener("resize", handleResize);
-handleResize(); // Run on load to ensure correct behavior

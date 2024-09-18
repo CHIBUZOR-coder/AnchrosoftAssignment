@@ -23,7 +23,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 
-<body class="">
+<body class="relative">
+    <div class="bg-transxlS hidden  z-50 absolute w-full h-full top-0 left-0 ">
+        <div class="absolute top-[89%] left-[25%]  w-[54%]  h-[431px] ">
+            <div class="w-full h-[94%]  bg-[url(./images/gallery_img11.jpg)] bman bg-center bg-cover ">
+
+            </div>
+
+            <div class="px-2 flex justify-between w-full">
+                <div>
+                    <p class="text-white font-bold">Your Caption</p>
+                    <p class="text-bla text-[12px]">image 1 of 1</p>
+                </div>
+
+                <span class="text-bla hover:text-white text-[25px] font-bold transition ease-in-out duration-700">
+                    <i class="fa-solid fa-x"></i>
+                </span>
+
+            </div>
+
+        </div>
+    </div>
+
     <!-- Big screen headers -->
     <div class="bigheader  relative z-20 bg-header hidden md:block  w-full py-1 ">
         <div>
@@ -1120,7 +1141,9 @@
 
 
     <!-- Banner8 -->
-    <div class="banner6 bg-header w-full px-5 md:px-0 pt-8 pb-14">
+    <div class="banner8 bg-header w-full px-5 md:px-0 pt-8 pb-14">
+
+
 
         <div class="pchild flex flex-col justify-center items-center gap-6 py-3 md:py-9 ">
 
@@ -1137,10 +1160,12 @@
         </div>
 
         <div class="px-0 md:px-3 py-3 md:py-0 ">
-            <div class="container pt-0 pb-8  w-full ">
+            <div class="container  pt-0 pb-8  w-full">
+
                 <div class="slider_wrapper overflow-hidden relative w-full flex justify-center items-center">
 
-                    <div class="slides w-full flex gap-0 md:gap-2 overflow-hidden  transition-transform duration-500 ease-in-out">
+                    <div
+                        class="slides w-full flex gap-0 md:gap-3 overflow-hidden  transition-transform duration-500 ease-in-out">
                         <!-- Two slides per view -->
                         <div class="slideA bg-[url(./images/gallery_img1.jpg)] bg-center bg-cover">
                             <div class="slideB ">
@@ -1215,14 +1240,26 @@
                     </div>
                 </div>
 
-                <!-- Dots for navigation
-                <div class="dots flex justify-center mt-4 md:mt-8 space-x-2">
-                    <div class=" dotParent pt-2 flex justify-center gap-2">
-                        <button class="dot w-[10px] h-[10px] bg-gray-300 rounded-full" data-slide="0"></button>
-                        <button class="dot w-[10px] h-[10px] bg-gray-300 rounded-full" data-slide="1"></button>
-                        <button class="dot w-[10px] h-[10px] bg-gray-300 rounded-full" data-slide="2"></button>
+                <!-- Dots for navigation -->
+
+
+                <div class="dotsB flex justify-center mt-4 md:mt-8 space-x-2 w-full ">
+                    <div class=" dotParentB relative left-4  pt-2 flex justify-center gap-3 ">
+                        <span class="nexttt">
+                            Prev
+                        </span>
+                        <span class="nexttt">
+                            Next
+                        </span>
                     </div>
-                </div> -->
+                </div>
+                <div class="dotsB flex justify-center mt-4 md:mt-8 space-x-2 w-full ">
+                    <div class=" dotParentB relative left-4  pt-2 flex justify-center gap-2 ">
+                        <button class="dotB w-[10px] h-[10px] bg-bla rounded-full" data-slide="0"></button>
+                        <button class="dotB w-[10px] h-[10px] bg-NaDot rounded-full" data-slide="1"></button>
+                        <button class="dotB w-[10px] h-[10px] bg-NaDot rounded-full" data-slide="2"></button>
+                    </div>
+                </div>
             </div>
 
         </div>
