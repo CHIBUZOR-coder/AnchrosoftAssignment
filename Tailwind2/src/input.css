@@ -516,7 +516,7 @@ svg[data-active="true"] {
 }
 
 .slideA {
-  @apply w-[25%] h-[200.3px] shrink-0;
+  @apply w-[24.5%] h-[138px] md:h-[200px]  shrink-0;
 }
 
 .slideB {
@@ -529,5 +529,54 @@ svg[data-active="true"] {
 }
 
 .nexttt {
-  @apply rounded-sm p-[5px] bg-NaDot hover:bg-NaDot2 transition ease-in-out duration-700 cursor-pointer;
+  @apply rounded-md relative right-0 md:left-3 p-[5px] bg-NaDot hover:bg-NaDot2 transition ease-in-out duration-700 cursor-pointer;
+}
+
+.dotB {
+  @apply w-[10px] h-[10px] relative right-0 md:left-3  rounded-full;
+}
+
+.arrowss {
+  @apply text-white   text-[30px] cursor-pointer z-10;
+}
+.arrowss .point {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.arrowss:hover .point {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+@media (max-width: 1000px) {
+  .slideA {
+    width: 32.6%;
+    height: 200px;
+  }
+  .slider {
+    /* background-color: yellow; */
+    gap: 9px;
+  }
+  .oyao {
+    padding: 0 0.5rem;
+  }
+
+  /* .banner8{
+    background-color: aqua;
+  } */
+}
+
+@media (max-width: 599.9px) {
+  .slideA {
+    width: 100%;
+  }
+}
+
+
+.extra{
+  background-size: cover;
+  background-position: center;
 }
