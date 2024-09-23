@@ -27,6 +27,7 @@ module.exports = {
         NaDot2: "rgba(214,214,214,1)",
         nextDot1: "rgb(234,234,234,1)",
         nextDot2: "rgb(234,234,234,1)",
+        banner9: "rgb(248,248,248)",
       },
       boxShadow: {
         thick: "rgba(0, 0, 0, 1)",

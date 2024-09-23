@@ -522,18 +522,28 @@ svg[data-active="true"] {
 .slideB {
   @apply w-full h-full flex justify-center items-center text-white text-2xl bg-transs hover:bg-Gallery transition ease-in-out duration-700;
 }
+.alidsp {
+ opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
 
+
+.slideB:hover .alidsp{
+  visibility: visible;
+  opacity: 1;
+}
 .bman {
   border: 5px solid rgb(204, 204, 204);
   border-radius: 5px;
 }
 
 .nexttt {
-  @apply rounded-md relative right-0 md:left-3 p-[5px] bg-NaDot hover:bg-NaDot2 transition ease-in-out duration-700 cursor-pointer;
+  @apply rounded-md relative right-0 md:left-2 p-[5px] bg-NaDot hover:bg-NaDot2 transition ease-in-out duration-700 cursor-pointer;
 }
 
 .dotB {
-  @apply w-[10px] h-[10px] relative right-0 md:left-3  rounded-full;
+  @apply w-[10px] h-[10px] relative right-0 md:left-2   rounded-full;
 }
 
 .arrowss {
@@ -549,7 +559,6 @@ svg[data-active="true"] {
   opacity: 1;
   visibility: visible;
 }
-
 
 @media (max-width: 1000px) {
   .slideA {
@@ -575,8 +584,17 @@ svg[data-active="true"] {
   }
 }
 
-
-.extra{
+.extra {
   background-size: cover;
   background-position: center;
+}
+
+
+input, textarea{
+  border: 1px solid black;
+  outline: none;
+
+}
+.collect{
+  @apply w-full
 }

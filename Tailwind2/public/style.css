@@ -704,6 +704,10 @@ video {
   margin: 0.25rem;
 }
 
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -757,6 +761,10 @@ video {
   height: 10px;
 }
 
+.h-\[116px\] {
+  height: 116px;
+}
+
 .h-\[1px\] {
   height: 1px;
 }
@@ -771,6 +779,14 @@ video {
 
 .h-\[2px\] {
   height: 2px;
+}
+
+.h-\[38px\] {
+  height: 38px;
+}
+
+.h-\[450px\] {
+  height: 450px;
 }
 
 .h-\[455px\] {
@@ -797,8 +813,16 @@ video {
   height: 510px;
 }
 
+.h-\[524px\] {
+  height: 524px;
+}
+
 .h-\[624px\] {
   height: 624px;
+}
+
+.h-\[762px\] {
+  height: 762px;
 }
 
 .h-\[94\%\] {
@@ -823,6 +847,10 @@ video {
 
 .w-3\/4 {
   width: 75%;
+}
+
+.w-36 {
+  width: 9rem;
 }
 
 .w-56 {
@@ -881,12 +909,20 @@ video {
   width: 40%;
 }
 
+.w-\[45\%\] {
+  width: 45%;
+}
+
 .w-\[50\%\] {
   width: 50%;
 }
 
 .w-\[50px\] {
   width: 50px;
+}
+
+.w-\[55\%\] {
+  width: 55%;
 }
 
 .w-\[56\%\] {
@@ -1056,6 +1092,11 @@ video {
   background-color: rgb(248 248 248 / var(--tw-bg-opacity));
 }
 
+.bg-banner9 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
+}
+
 .bg-bla {
   --tw-bg-opacity: 1;
   background-color: rgb(153 153 153 / var(--tw-bg-opacity));
@@ -1064,6 +1105,11 @@ video {
 .bg-blue-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(147 197 253 / var(--tw-bg-opacity));
+}
+
+.bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
 }
 
 .bg-gray-300 {
@@ -1079,6 +1125,11 @@ video {
 .bg-headerBtnText {
   --tw-bg-opacity: 1;
   background-color: rgb(205 162 116 / var(--tw-bg-opacity));
+}
+
+.bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
 .bg-slate-500 {
@@ -1097,6 +1148,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-yellow-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 240 138 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/images\/88-restaurant\.jpg\'\)\] {
@@ -1203,6 +1259,10 @@ video {
   background-position: center;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -1213,6 +1273,10 @@ video {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-0 {
@@ -1308,6 +1372,16 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .py-\[20px\] {
@@ -2263,6 +2337,17 @@ svg[data-active="true"] {
   background-color: rgba(25, 32, 37, 0.6);
 }
 
+.alidsp {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.slideB:hover .alidsp{
+  visibility: visible;
+  opacity: 1;
+}
+
 .bman {
   border: 5px solid rgb(204, 204, 204);
   border-radius: 5px;
@@ -2288,7 +2373,7 @@ svg[data-active="true"] {
 
 @media (min-width: 768px) {
   .nexttt {
-    left: 0.75rem;
+    left: 0.5rem;
   }
 }
 
@@ -2302,7 +2387,7 @@ svg[data-active="true"] {
 
 @media (min-width: 768px) {
   .dotB {
-    left: 0.75rem;
+    left: 0.5rem;
   }
 }
 
@@ -2351,9 +2436,18 @@ svg[data-active="true"] {
   }
 }
 
-.extra{
+.extra {
   background-size: cover;
   background-position: center;
+}
+
+input, textarea{
+  border: 1px solid black;
+  outline: none;
+}
+
+.collect {
+  width: 100%;
 }
 
 .hover\:bg-transxl:hover {
@@ -2386,6 +2480,10 @@ svg[data-active="true"] {
 
   .md\:top-0 {
     top: 0px;
+  }
+
+  .md\:mt-2 {
+    margin-top: 0.5rem;
   }
 
   .md\:mt-8 {
@@ -2483,6 +2581,11 @@ svg[data-active="true"] {
     padding-bottom: 3.5rem;
   }
 
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .md\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
@@ -2491,6 +2594,11 @@ svg[data-active="true"] {
   .md\:py-9 {
     padding-top: 2.25rem;
     padding-bottom: 2.25rem;
+  }
+
+  .md\:py-\[1\.8rem\] {
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
   }
 
   .md\:pb-14 {
