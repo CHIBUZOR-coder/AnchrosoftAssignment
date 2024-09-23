@@ -28,6 +28,8 @@ module.exports = {
         nextDot1: "rgb(234,234,234,1)",
         nextDot2: "rgb(234,234,234,1)",
         banner9: "rgb(248,248,248)",
+        formColor: "rgb(85,85,85)",
+        banner10: "rgb(30,37,41)",
       },
       boxShadow: {
         thick: "rgba(0, 0, 0, 1)",

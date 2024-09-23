@@ -12,6 +12,18 @@ body {
   animation-duration: 0.9s;
 }
 
+.badgee {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0s 0.5s; /* Visibility delayed */
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease-in-out, visibility 0s; /* Visibility instantly visible */
+}
+
 .boxx {
   box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.4);
 }
@@ -523,13 +535,12 @@ svg[data-active="true"] {
   @apply w-full h-full flex justify-center items-center text-white text-2xl bg-transs hover:bg-Gallery transition ease-in-out duration-700;
 }
 .alidsp {
- opacity: 0;
+  opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
-
-.slideB:hover .alidsp{
+.slideB:hover .alidsp {
   visibility: visible;
   opacity: 1;
 }
@@ -560,6 +571,65 @@ svg[data-active="true"] {
   visibility: visible;
 }
 
+input,
+textarea {
+  border: 1px solid black;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 1429px;
+  color: rgb(85, 85, 85);
+}
+input::placeholder {
+  color: rgb(85, 85, 85);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.uppercasee {
+  font-size: 16px;
+  letter-spacing: 6px;
+  line-height: 27.2px;
+  font-weight: 400;
+}
+
+.noname {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  line-height: 20px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+  }
+}
+
+.collect {
+  @apply w-full;
+}
+
+.tcont {
+  font-size: 66px;
+  line-height: 66px;
+  font-weight: 700;
+}
+
+
+
+/* .doo {
+  font-style: italic;
+} */
+.bcont {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.coniconm {
+  @apply flex justify-center items-center gap-5;
+}
+
 @media (max-width: 1000px) {
   .slideA {
     width: 32.6%;
@@ -572,6 +642,13 @@ svg[data-active="true"] {
   .oyao {
     padding: 0 0.5rem;
   }
+
+  
+.tcont {
+  font-size: 34px;
+  line-height: 35px;
+  font-weight: 700;
+}
 
   /* .banner8{
     background-color: aqua;
@@ -588,13 +665,7 @@ svg[data-active="true"] {
   background-size: cover;
   background-position: center;
 }
-
-
-input, textarea{
-  border: 1px solid black;
-  outline: none;
-
-}
-.collect{
-  @apply w-full
-}
+/* 
+.contact {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+} */
