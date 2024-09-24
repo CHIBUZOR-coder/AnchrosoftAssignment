@@ -618,8 +618,6 @@ input::placeholder {
   font-weight: 700;
 }
 
-
-
 /* .doo {
   font-style: italic;
 } */
@@ -628,6 +626,22 @@ input::placeholder {
 }
 .coniconm {
   @apply flex justify-center items-center gap-5;
+}
+.flinkss {
+  @apply flex gap-2;
+}
+/* 
+.flinkss{
+  @apply 
+} */
+
+.uppercaseeF {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 8px;
+  line-height: 15.4px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media (max-width: 1000px) {
@@ -643,12 +657,11 @@ input::placeholder {
     padding: 0 0.5rem;
   }
 
-  
-.tcont {
-  font-size: 34px;
-  line-height: 35px;
-  font-weight: 700;
-}
+  .tcont {
+    font-size: 34px;
+    line-height: 35px;
+    font-weight: 700;
+  }
 
   /* .banner8{
     background-color: aqua;
