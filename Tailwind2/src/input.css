@@ -644,6 +644,9 @@ input::placeholder {
   font-family: "Montserrat", sans-serif;
 }
 
+.dput {
+  border: 1px solid white;
+}
 @media (max-width: 1000px) {
   .slideA {
     width: 32.6%;

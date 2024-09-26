@@ -30,6 +30,7 @@ module.exports = {
         banner9: "rgb(248,248,248)",
         formColor: "rgb(85,85,85)",
         banner10: "rgb(30,37,41)",
+        hrbuttom: "rgb(238,238,238)",
       },
       boxShadow: {
         thick: "rgba(0, 0, 0, 1)",
