@@ -607,9 +607,6 @@ badge.addEventListener("click", (e) => {
   }
 });
 
-
-
-
 gallery.addEventListener("click", (e) => {
   e.stopPropagation(); // Prevent event bubbling up to badge
 });
@@ -628,7 +625,6 @@ slideA.forEach((slide, index) => {
 
     if (badge.classList.contains("hidden")) {
       badge.classList.remove("hidden");
-      
     }
 
     // Update modal background with the corresponding image

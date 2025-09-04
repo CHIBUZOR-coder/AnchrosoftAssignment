@@ -285,7 +285,6 @@ svg[data-active="true"] {
 
 .most {
   font-family: "Oswald", sans-serif;
-
   font-weight: 500;
 }
 
@@ -356,6 +355,7 @@ svg[data-active="true"] {
   transition: top 0.3s ease-in-out, opacity 1.5s ease-in-out, visibility 0s 1.5s;
   transition-delay: 0.5s;
 }
+
 /* *** */
 .Alinks {
   position: absolute;
